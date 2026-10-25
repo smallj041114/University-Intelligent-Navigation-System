@@ -1,0 +1,20 @@
+{
+  "name": "mcu-campus-navigation",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "hash:admin": "node scripts/hash-admin-password.cjs",
+    "validate:nodes": "node scripts/validate-nodes.cjs",
+    "validate:buildings": "node scripts/validate-buildings.cjs"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

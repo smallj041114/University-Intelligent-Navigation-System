@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訪客導航｜銘傳大學桃園校區</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="landing-page visitor-start-page">
+    <main class="visitor-card">
+      <a class="visitor-back" href="./">← 返回首頁</a>
+      <h1 class="landing-title">訪客導航</h1>
+      <p class="landing-desc">先選起點，再從建議中點選目的地，即可開始導航。</p>
+
+      <section class="visitor-section" aria-labelledby="visitorStartLabel">
+        <h2 id="visitorStartLabel" class="visitor-label">起點</h2>
+        <div id="visitorStartPresets" class="visitor-start-presets" role="group" aria-label="預設起點"></div>
+        <div id="visitorStartOtherWrap" class="visitor-start-other-wrap hidden">
+          <label class="visitor-label visitor-start-other-label" for="visitorStartInput">搜尋其他起點</label>
+          <div class="visitor-dest-wrap visitor-start-wrap">
+            <input
+              id="visitorStartInput"
+              class="visitor-dest-input"
+              type="search"
+              placeholder="搜尋起點，例如：校門口、1001"
+              autocomplete="off"
+            />
+            <ul id="visitorStartResults" class="visitor-dest-results" hidden></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="visitor-section" aria-labelledby="visitorDestLabel">
+        <label id="visitorDestLabel" class="visitor-label" for="visitorDestInput">目的地</label>
+        <div class="visitor-dest-wrap">
+          <input
+            id="visitorDestInput"
+            class="visitor-dest-input"
+            type="search"
+            placeholder="輸入關鍵字，例如：S109、1001"
+            autocomplete="off"
+          />
+          <ul id="visitorDestResults" class="visitor-dest-results" hidden></ul>
+        </div>
+        <p class="visitor-hint">請從下拉建議點選起點與目的地（含節點編號與房間名）；同名會顯示棟別／樓層。起點可選預設、地圖定位，或按「其他」搜尋。</p>
+      </section>
+
+      <section class="visitor-section visitor-waypoints-section" aria-labelledby="visitorWaypointsLabel">
+        <div class="visitor-waypoints-header">
+          <h2 id="visitorWaypointsLabel" class="visitor-label visitor-waypoints-title">中途停靠（選填）</h2>
+          <button id="visitorAddWaypointBtn" type="button" class="visitor-add-waypoint-btn">＋ 新增停靠</button>
+        </div>
+        <div id="visitorWaypointsList" class="visitor-waypoints-list" aria-live="polite"></div>
+        <p class="visitor-hint">請從建議清單點選停靠點；可設定停留秒數，或改為按「繼續」後再往下一站。最多 20 站。使用地圖定位作為起點時無法搭配停靠。</p>
+      </section>
+
+      <p id="visitorRouteSummary" class="visitor-route-summary hidden" aria-live="polite"></p>
+
+      <section class="visitor-section" aria-labelledby="visitorFloorLabel">
+        <label id="visitorFloorLabel" class="visitor-label" for="visitorFloorMode">樓層移動</label>
+        <select id="visitorFloorMode" class="visitor-dest-input visitor-floor-mode" title="走樓梯＝避開電梯；樓梯+電梯＝有電梯就優先搭電梯">
+          <option value="stairs" selected>走樓梯</option>
+          <option value="both">樓梯+電梯</option>
+        </select>
+        <p class="visitor-hint">跨樓層時可選擇是否搭電梯（預設走樓梯）。</p>
+      </section>
+
+      <p id="visitorStatus" class="visitor-status" aria-live="polite"></p>
+
+      <div class="visitor-actions">
+        <button id="visitorStartBtn" class="visitor-go-btn is-disabled" type="button" disabled>開始導航</button>
+        <button id="visitorShareBtn" class="visitor-share-btn is-disabled" type="button" disabled>複製分享連結</button>
+      </div>
+      <a class="visitor-browse" href="./navigation.html">自由瀏覽校園地圖</a>
+      <p id="visitorAppVersion" class="visitor-app-version" aria-label="系統版本"></p>
+    </main>
+    <script type="module" src="/src/pages/visitor.js"></script>
+  </body>
+</html>

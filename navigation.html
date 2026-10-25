@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>銘傳大學桃園校區導航系統</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./vendor/pannellum/pannellum.css"
+      onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css'"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="toolbar">
+        <a id="visitorBackLink" class="toolbar-btn visitor-back-link" href="./visitor.html">← 返回訪客頁</a>
+        <button id="backBtn" class="toolbar-btn hidden" type="button">← 返回校園地圖</button>
+        <h1 id="viewTitle" class="toolbar-title">校園地圖</h1>
+        <div id="campusMapStyleSwitch" class="campus-map-style-switch" role="group" aria-label="校園地圖樣式">
+          <button id="campusMapStyleCustomBtn" type="button" class="campus-map-style-btn is-active" data-campus-map-style="custom" aria-pressed="true">自製平面圖</button>
+          <button id="campusMapStyleSatelliteBtn" type="button" class="campus-map-style-btn" data-campus-map-style="satellite" aria-pressed="false">衛星圖</button>
+        </div>
+        <button id="editModeBtn" class="toolbar-btn edit-mode-btn hidden" type="button" aria-pressed="false">編輯模式</button>
+        <button id="addDestinationMapBtn" class="toolbar-btn hidden" type="button" aria-pressed="false">＋ 目的地</button>
+        <button
+          id="toggleMapDestinationsBtn"
+          class="toolbar-btn"
+          type="button"
+          title="點擊切換：都顯示 → 不顯示目的地 → 都不顯示"
+        >
+          標記：都顯示
+        </button>
+        <div id="floorSwitcher" class="floor-switcher hidden" role="group" aria-label="樓層切換"></div>
+        <div id="buildingShortcuts" class="building-shortcuts hidden" role="group" aria-label="大樓快捷切換"></div>
+      </header>
+
+      <div
+        id="mapContainer"
+        class="map-container"
+        aria-label="地圖區域，點擊可新增全景節點"
+      >
+        <div id="mapAssetBanner" class="map-asset-banner hidden" role="status" aria-live="polite"></div>
+        <div id="mapStage" class="map-stage">
+          <img id="mapImage" class="map-image" src="./images/campus/campus-map.jpg?v=__APP_VERSION__" alt="校園地圖" />
+          <div id="buildingHotspots" class="building-hotspots"></div>
+          <div id="mapPortals" class="map-portals hidden" aria-label="平面圖出口快捷"></div>
+        </div>
+        <div id="campusSatelliteWrap" class="campus-satellite-wrap hidden">
+          <div id="campusSatelliteStage" class="campus-satellite-stage">
+            <img
+              id="campusSatelliteImage"
+              class="campus-satellite-image"
+              src="./images/campus/campus-satellite-ref.png"
+              alt="銘傳大學桃園校區衛星圖"
+            />
+            <div id="campusSatelliteMarkers" class="campus-satellite-markers" aria-hidden="false"></div>
+          </div>
+        </div>
+        <div id="mapDistanceScaleBar" class="map-distance-scale-bar hidden" role="group" aria-label="連線距離估算基準">
+          <label class="map-distance-scale-label" for="mapDistanceScaleInput">
+            距離估算：平面圖 1% ≈
+          </label>
+          <input
+            id="mapDistanceScaleInput"
+            class="map-distance-scale-input"
+            type="number"
+            min="0.1"
+            max="10"
+            step="0.05"
+            value="1"
+            title="同樓層連線自動帶入距離的換算基準"
+          />
+          <span class="map-distance-scale-unit">公尺</span>
+          <span id="mapDistanceScaleStatus" class="map-distance-scale-status" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <section id="outdoorNavPanel" class="outdoor-nav-panel hidden" aria-label="校外 Google 地圖導航">
+        <div class="outdoor-nav-toolbar">
+          <div class="outdoor-nav-copy">
+            <h2 class="outdoor-nav-title">前往校園</h2>
+            <p id="outdoorNavStatus" class="outdoor-nav-status">正在規劃前往校園的路線…</p>
+          </div>
+          <div class="outdoor-nav-actions">
+            <label class="outdoor-travel-label" for="outdoorTravelMode">交通方式</label>
+            <select id="outdoorTravelMode" class="outdoor-travel-select">
+              <option value="WALKING">步行</option>
+              <option value="DRIVING">開車</option>
+            </select>
+            <button id="outdoorRefreshBtn" type="button" class="secondary-btn">重新定位</button>
+            <a id="outdoorOpenMapsBtn" class="secondary-btn outdoor-open-maps hidden" href="#" target="_blank" rel="noopener noreferrer">在 Google 地圖開啟</a>
+            <button id="outdoorArrivedBtn" type="button" class="primary-btn">我已抵達校園</button>
+          </div>
+        </div>
+        <div id="googleMap" class="google-map-host" role="region" aria-label="Google 地圖"></div>
+      </section>
+
+      <button id="panelToggle" class="toggle-btn" type="button" aria-label="切換選單">☰</button>
+
+      <div id="locateStartBanner" class="locate-start-banner hidden" role="status" aria-live="polite">
+        <div class="locate-start-banner-copy">
+          <strong id="locateStartTitle">地圖定位起點</strong>
+          <p id="locateStartHint">請在校園地圖上點一下你附近的位置，系統會對到最近的節點。</p>
+        </div>
+        <div class="locate-start-banner-actions">
+          <button id="locateStartGpsBtn" type="button" class="secondary-btn">用 GPS 大致定位</button>
+          <button id="locateUseSatelliteBtn" type="button" class="secondary-btn">改用衛星圖點選</button>
+          <button id="locateStartConfirmBtn" type="button" class="primary-btn hidden">確認以此為起點</button>
+          <button id="locateStartRetryBtn" type="button" class="secondary-btn hidden">重選</button>
+          <button id="locateStartCancelBtn" type="button" class="secondary-btn">取消</button>
+        </div>
+      </div>
+
+      <aside id="sidePanel" class="panel">
+        <div class="panel-header">
+          <h2>導航選單</h2>
+          <p id="panelHint">點擊節點開啟環景導航。編輯地圖請由選單「管理人員登入」。</p>
+          <p id="nodeSaveStatus" class="node-save-status" aria-live="polite"></p>
+        </div>
+        <div class="panel-body">
+          <section class="panel-section visitor-return-section">
+            <a id="visitorBackPanelLink" class="secondary-btn panel-link-btn visitor-return-btn" href="./visitor.html">← 返回訪客頁</a>
+          </section>
+          <section id="campusBuildingEditSection" class="panel-section hidden visitor-hide">
+            <h3>校園大樓</h3>
+            <p class="panel-section-desc">編輯模式下可新增大樓，並在校園平面圖上放置入口（僅自製平面圖）。</p>
+            <button id="campusBuildingAddBtn" type="button" class="secondary-btn">＋ 新增大樓</button>
+            <p id="campusBuildingPlaceHint" class="campus-building-place-hint hidden"></p>
+          </section>
+          <section id="nodeListSection" class="panel-section">
+            <h3>目前地圖節點</h3>
+            <ul id="nodeList" class="node-list"></ul>
+          </section>
+          <section id="destSearchSection" class="panel-section visitor-simplify">
+            <h3>目的地查詢</h3>
+            <label class="modal-label" for="destSearchInput">搜尋目的地</label>
+            <input id="destSearchInput" class="modal-input" type="search" placeholder="輸入關鍵字，例如：S109、出口" />
+            <ul id="destSearchResults" class="dest-search-results"></ul>
+          </section>
+          <section class="panel-section">
+            <h3>最短路徑</h3>
+            <p id="visitorPathGuide" class="visitor-path-guide hidden" aria-live="polite"></p>
+            <label class="modal-label visitor-simplify" for="pathFrom">起點</label>
+            <div class="path-from-row visitor-simplify">
+              <input id="pathFrom" class="modal-input" type="search" list="pathSuggestions" placeholder="輸入節點或目的地名稱" autocomplete="off" />
+              <button id="pathLocateMapBtn" type="button" class="secondary-btn path-locate-map-btn">地圖定位</button>
+              <button id="pathLocateGpsBtn" type="button" class="secondary-btn path-locate-map-btn">GPS 定位</button>
+            </div>
+            <button
+              id="pathSetPanoStartBtn"
+              type="button"
+              class="secondary-btn path-set-pano-start-btn visitor-simplify"
+              title="將目前開啟的環景節點設為路徑起點"
+            >
+              設目前環景為起點
+            </button>
+            <div id="pathWaypointsSection" class="path-waypoints-section visitor-simplify">
+              <div class="path-waypoints-header">
+                <span class="modal-label path-waypoints-label">中途停靠（選填）</span>
+                <button id="pathAddWaypointBtn" type="button" class="link-btn path-add-waypoint-btn">＋ 新增停靠</button>
+              </div>
+              <div id="pathWaypointsList" class="path-waypoints-list" aria-live="polite"></div>
+            </div>
+            <label class="modal-label visitor-simplify" for="pathTo">終點</label>
+            <input id="pathTo" class="modal-input visitor-simplify" type="search" list="pathSuggestions" placeholder="輸入目的地名稱，例如：S109" autocomplete="off" />
+            <datalist id="pathSuggestions"></datalist>
+            <label class="modal-label visitor-simplify" for="pathFloorMode">樓層移動</label>
+            <select id="pathFloorMode" class="modal-input visitor-simplify path-floor-mode" title="走樓梯＝避開電梯；樓梯+電梯＝有電梯就優先搭電梯">
+              <option value="stairs" selected>走樓梯</option>
+              <option value="both">樓梯+電梯</option>
+            </select>
+            <div class="path-actions">
+              <button id="pathCalcBtn" type="button" class="primary-btn visitor-simplify">計算路徑</button>
+              <button id="pathGoBtn" type="button" class="link-btn hidden">自動播放路徑</button>
+              <button id="pathCancelBtn" type="button" class="secondary-btn hidden">取消播放</button>
+              <button id="pathStopBtn" type="button" class="secondary-btn hidden">停止導覽</button>
+              <button id="pathShareBtn" type="button" class="secondary-btn hidden">複製分享連結</button>
+            </div>
+            <div id="pathAutoControls" class="path-auto-controls hidden visitor-simplify">
+              <label class="modal-label" for="pathAutoDelay">每站停留：<span id="pathAutoDelayValue">1.0 秒</span></label>
+              <input id="pathAutoDelay" type="range" min="0.2" max="20" step="0.1" value="1" />
+            </div>
+            <p id="pathResult" class="path-result"></p>
+            <p id="outdoorPathResult" class="path-result outdoor-path-result hidden"></p>
+          </section>
+          <section id="adminLoginSection" class="panel-section visitor-hide">
+            <h3>管理</h3>
+            <p class="panel-section-desc">編輯節點、連線與導航設定需完整管理員登入；二級帳號可管理連結／QR 與據點面向。</p>
+            <a href="./admin/login.html" class="secondary-btn panel-link-btn">管理人員登入</a>
+          </section>
+          <section id="adminPanelSection" class="panel-section hidden visitor-hide">
+            <h3>管理</h3>
+            <p id="adminPanelDesc" class="panel-section-desc">已登入。可編輯地圖，或開啟設定頁調整箭頭與播放外觀。</p>
+            <a id="adminHomeLink" href="./admin/" class="secondary-btn panel-link-btn">開啟管理後台</a>
+            <a id="adminLinksLink" href="./admin/links.html" class="secondary-btn panel-link-btn">連結／QR</a>
+            <a id="adminSettingsLink" href="./settings.html" class="secondary-btn panel-link-btn">開啟設定頁</a>
+            <button id="adminLogoutBtn" type="button" class="secondary-btn panel-link-btn">登出</button>
+          </section>
+          <section class="panel-section panel-help visitor-help-section hidden">
+            <h3>操作說明</h3>
+            <ul>
+              <li>路徑就緒後，請按「自動播放路徑」開始，或按「取消播放」結束就緒狀態</li>
+              <li>找不到路或定位失敗時，可按「返回訪客頁」重選起點／目的地</li>
+              <li>自動播放時可按空白鍵暫停或繼續</li>
+              <li>校內可用「地圖定位」或「GPS 大致定位」對到最近節點</li>
+            </ul>
+          </section>
+          <section class="panel-section panel-help visitor-full-help">
+            <h3>操作說明</h3>
+            <ul>
+              <li>計算路徑後可點擊路徑上的節點名稱，直接開啟該站環景</li>
+              <li class="admin-help hidden">編輯模式可為節點開啟「轉彎輔助」：進入後若下一箭頭相差超過 15° 會自動轉向</li>
+              <li class="admin-help hidden">編輯模式中可拖動環景裡的地面箭頭，調整連線方向與位置</li>
+              <li>自動播放路徑時可按空白鍵暫停或繼續，也可按「暫停」／「繼續播放」</li>
+              <li>校內可用「地圖定位」或「GPS 大致定位」對到最近節點</li>
+              <li class="admin-help hidden">開啟「編輯模式」後，點擊地圖開啟新增節點表單（可預覽全景圖）；拖曳紅點可移動位置</li>
+              <li class="admin-help hidden">編輯模式按「＋ 目的地」再點平面圖，可放置綠色教室／地點標記（綁定最近紅點的環景，可改選）；拖曳調整位置，右鍵刪除</li>
+              <li class="admin-help hidden">校園平面圖編輯模式：「＋ 新增大樓」建立新棟；拖曳藍色按鈕移動熱點；右鍵或設定頁可刪除大樓</li>
+              <li class="admin-help hidden">平面圖連線：綠色實線＝雙向已連；橘色虛線＋箭頭＝僅單向（箭頭為有連線的一端）</li>
+              <li class="admin-help hidden">編輯模式中可修改節點名稱與連線距離</li>
+              <li class="admin-help hidden">新增連線可搜尋目標；同樓層距離會依平面圖自動估算（基準可在編輯模式平面圖右下角調整）；完成後可接續設定反向連線</li>
+              <li class="admin-help hidden">連線時看環景下方藍色操作列：面向→距離→到達面向</li>
+              <li>連線完成後，轉動環景可看到通往下一節點的地面箭頭（會跟著移動）</li>
+              <li class="admin-help hidden">環景中可按「編輯模式」後，用「＋ 新增連線」或「＋ 新增目的地」設定導航；目的地會先出現在平面圖，朝向可稍後再補</li>
+              <li>「目的地查詢」與「最短路徑」可搜尋所有大樓與樓層的節點／目的地</li>
+              <li>同名地點可用「名稱（S 棟 2F）」格式指定樓層；連線也可跨樓層設定</li>
+              <li>若已填起點，目的地查詢會自動開啟路徑最近的那一處</li>
+              <li class="admin-help hidden">右鍵紅點或選單「刪除」可移除節點</li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+    </div>
+
+    <div id="panoramaOverlay" class="panorama-overlay hidden" role="dialog" aria-modal="true">
+      <header class="panorama-topbar">
+        <strong id="panoramaTitle">全景檢視</strong>
+        <div class="panorama-topbar-actions">
+          <button id="panoramaPanelToggle" type="button" class="panorama-action-btn panorama-panel-toggle-btn" aria-pressed="false">☰ 選單</button>
+          <button id="panoramaPauseAutoBtn" type="button" class="panorama-action-btn panorama-pause-auto-btn hidden" aria-pressed="false">⏸ 暫停導覽</button>
+          <button id="panoramaSetStartBtn" type="button" class="panorama-action-btn panorama-set-start-btn hidden">設為起點</button>
+          <button id="panoramaSaveSpotBtn" type="button" class="panorama-action-btn hidden">儲存據點面向</button>
+          <button id="panoramaCaptureView" type="button" class="panorama-action-btn hidden">📍 使用目前面向（平視）</button>
+          <button id="panoramaEditModeBtn" type="button" class="panorama-action-btn panorama-edit-mode-btn edit-mode-btn hidden" aria-pressed="false">編輯模式</button>
+          <button id="panoramaAddLink" type="button" class="panorama-action-btn hidden">＋ 新增連線</button>
+          <button id="panoramaAddDestination" type="button" class="panorama-action-btn panorama-action-btn-dest hidden">＋ 新增目的地</button>
+          <a id="panoramaVisitorBackLink" class="panorama-close-btn panorama-visitor-back" href="./visitor.html">← 返回訪客頁</a>
+          <button id="panoramaClose" type="button" class="panorama-close-btn">關閉</button>
+        </div>
+      </header>
+      <p id="panoramaHint" class="panorama-hint hidden"></p>
+      <div class="panorama-viewer-wrap">
+        <div id="playSpeedHud" class="play-speed-hud play-speed-hud-top-left hidden" aria-live="polite">
+          <button type="button" id="playSpeedHudReset" class="play-speed-hud-reset hidden" title="重設位置與大小">重設</button>
+          <p class="play-speed-label">當前速度</p>
+          <p id="playSpeedValue" class="play-speed-value">停留 1.0 秒</p>
+          <div class="play-speed-keys">
+            <button type="button" id="playSpeedDownBtn" class="play-speed-btn" title="減速（− 或 ↓）">
+              <kbd>−</kbd>
+              <span>減速</span>
+            </button>
+            <button type="button" id="playSpeedUpBtn" class="play-speed-btn" title="加速（+ 或 ↑）">
+              <kbd>+</kbd>
+              <span>加速</span>
+            </button>
+          </div>
+          <p class="play-speed-hint">空白鍵暫停／繼續；鍵盤 <kbd>+</kbd> / <kbd>−</kbd> 或 <kbd>↑</kbd> / <kbd>↓</kbd></p>
+          <span class="overlay-resize-handle" aria-hidden="true" title="拖曳調整大小"></span>
+        </div>
+        <div id="panoramaViewer" class="panorama-viewer-host"></div>
+        <div id="elevatorRideOverlay" class="elevator-ride-overlay hidden" role="status" aria-live="polite">
+          <p class="elevator-ride-title">電梯</p>
+          <p id="elevatorRideFloors" class="elevator-ride-floors">—</p>
+          <p id="elevatorRideDest" class="elevator-ride-dest">前往</p>
+        </div>
+        <div id="panoramaWaypointHold" class="panorama-waypoint-hold hidden" role="status" aria-live="polite">
+          <p id="panoramaWaypointProgress" class="panorama-waypoint-progress hidden"></p>
+          <p id="panoramaWaypointHoldText" class="panorama-waypoint-hold-text">已抵達停靠點</p>
+          <p id="panoramaWaypointCountdown" class="panorama-waypoint-countdown hidden"></p>
+          <button id="panoramaWaypointContinueBtn" type="button" class="panorama-waypoint-continue-btn">
+            繼續前往下一站
+          </button>
+        </div>
+        <div id="panoramaMinimap" class="panorama-minimap panorama-minimap-top-right hidden" aria-label="位置小地圖">
+          <div class="panorama-minimap-header">
+            <span id="panoramaMinimapLabel" class="panorama-minimap-label">校園地圖</span>
+          </div>
+          <div class="panorama-minimap-stage">
+            <div class="panorama-minimap-map-stage">
+              <img id="panoramaMinimapImage" class="panorama-minimap-image" src="" alt="" />
+              <svg class="panorama-minimap-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+              <div class="panorama-minimap-markers" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="panoramaNavButtons" class="panorama-nav-buttons hidden" aria-label="前往連接節點"></div>
+      <div id="destinationWizardBar" class="destination-wizard-bar hidden">
+        <p id="destinationWizardStepText" class="link-wizard-step"></p>
+        <div class="link-wizard-actions">
+          <button id="destWizardCaptureBtn" type="button" class="panorama-action-btn">📍 使用目前面向</button>
+          <button id="destWizardConfirmBtn" type="button" class="primary-btn">確認完成</button>
+          <button id="destWizardCancelBtn" type="button" class="secondary-btn">取消</button>
+        </div>
+      </div>
+      <div id="linkWizardBar" class="link-wizard-bar hidden">
+        <p id="linkWizardStepText" class="link-wizard-step"></p>
+        <div id="linkWizardDistanceRow" class="link-wizard-distance hidden">
+          <label for="linkDistanceInput">距離（公尺）</label>
+          <input id="linkDistanceInput" type="number" min="1" step="1" value="10" />
+        </div>
+        <div class="link-wizard-actions">
+          <button id="wizardCaptureBtn" type="button" class="panorama-action-btn">📍 使用目前面向</button>
+          <button id="wizardConfirmBtn" type="button" class="primary-btn">確認此步驟</button>
+          <button id="wizardCancelBtn" type="button" class="secondary-btn">取消</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="buildingModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="buildingModalTitle">
+      <div class="modal-card">
+        <h3 id="buildingModalTitle">新增大樓</h3>
+        <p class="modal-desc">填寫大樓資訊後，請在校園平面圖上點選入口按鈕位置。</p>
+        <label class="modal-label" for="buildingNameInput">大樓名稱</label>
+        <input id="buildingNameInput" class="modal-input" type="text" placeholder="例如：圖書館、設計大樓" autocomplete="off" />
+        <label class="modal-label" for="buildingCodeInput">大樓代碼（英文，選填）</label>
+        <input id="buildingCodeInput" class="modal-input" type="text" placeholder="例如 lib、design；留空自動產生" autocomplete="off" />
+        <label class="modal-label" for="buildingLabelInput">地圖按鈕顯示名稱（選填）</label>
+        <input id="buildingLabelInput" class="modal-input" type="text" placeholder="留空則與大樓名稱相同" autocomplete="off" />
+        <label class="modal-label" for="buildingFloorLabelInput">首層樓層名稱</label>
+        <input id="buildingFloorLabelInput" class="modal-input" type="text" value="1F" autocomplete="off" />
+        <label class="modal-label" for="buildingFloorImageInput">首層平面圖路徑</label>
+        <input id="buildingFloorImageInput" class="modal-input" type="text" value="./images/B/floorplan-b-1F.jpg" autocomplete="off" />
+        <p class="modal-hint">平面圖與環景路徑規則與 S／P 棟相同（例如 ./images/LIB/floorplan-lib-1F.jpg）。</p>
+        <p id="buildingModalError" class="modal-error hidden" role="alert"></p>
+        <div class="modal-actions">
+          <button id="buildingModalConfirm" type="button" class="primary-btn">下一步：點選地圖位置</button>
+          <button id="buildingModalCancel" type="button" class="secondary-btn">取消</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="nodeModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="nodeModalTitle">
+      <div class="modal-card modal-card-node">
+        <h3 id="nodeModalTitle">新增節點</h3>
+        <p class="modal-desc">可從目前樓層縮圖選圖（含已用過的），或手動輸入檔名；確認前會顯示預覽。</p>
+        <label class="modal-label" for="nodeNameInput">節點名稱</label>
+        <input id="nodeNameInput" class="modal-input" type="text" placeholder="例如：S201 教室、0004" autocomplete="off" />
+        <label class="modal-label" for="nodeUrlInput">全景圖檔名或路徑</label>
+        <input id="nodeUrlInput" class="modal-input" type="text" placeholder="例如：S201.jpg 或 0004.jpg" autocomplete="off" />
+        <p id="nodeUrlHint" class="modal-hint">將儲存為：（輸入檔名後顯示）</p>
+        <p class="modal-label">從目前樓層選圖</p>
+        <div id="nodeImagePicker" class="node-image-picker" aria-label="全景圖縮圖清單"></div>
+        <div id="nodePreview" class="node-preview node-preview-empty" aria-live="polite">
+          <img id="nodePreviewImage" class="node-preview-image hidden" alt="全景圖預覽" />
+          <p id="nodePreviewStatus" class="modal-hint">輸入檔名或點選縮圖後顯示預覽</p>
+        </div>
+        <p id="nodeModalError" class="modal-error hidden" role="alert"></p>
+        <div class="modal-actions">
+          <button id="nodeModalConfirm" type="button" class="primary-btn">確認新增</button>
+          <button id="nodeModalCancel" type="button" class="secondary-btn">取消</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="destinationModal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <h3 id="destinationModalTitle">新增目的地</h3>
+        <p id="destinationModalDesc" class="modal-desc">輸入名稱後，在環景中左右轉向標記該目的地的方向。</p>
+        <label class="modal-label" for="destinationNameInput">目的地名稱</label>
+        <input id="destinationNameInput" class="modal-input" type="text" placeholder="例如：S109、後門、服務台" />
+        <div id="destinationBindField" class="destination-bind-field hidden">
+          <label class="modal-label" for="destinationBindSelect">綁定路徑節點（環景）</label>
+          <select id="destinationBindSelect" class="modal-input"></select>
+        </div>
+        <div class="modal-actions">
+          <button id="destinationModalConfirm" type="button" class="primary-btn">開始標記方向</button>
+          <button id="destinationModalCancel" type="button" class="secondary-btn">取消</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="linkModal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="modal-card modal-card-link">
+        <h3 id="linkModalTitle">連接節點</h3>
+        <p class="modal-desc">搜尋並選擇目標；同樓層會依距離排序並標示連線狀態。確認後依環景下方藍色操作列完成三步驟。</p>
+        <label class="modal-label" for="linkTargetSearch">搜尋目標節點</label>
+        <input id="linkTargetSearch" class="modal-input" type="search" placeholder="輸入名稱或樓層，例如：1002、S 棟 1F" autocomplete="off" />
+        <ul id="linkTargetResults" class="link-target-results" aria-label="連線目標清單"></ul>
+        <p id="linkModalError" class="modal-error hidden" role="alert"></p>
+        <div class="modal-actions">
+          <button id="linkModalConfirm" type="button" class="primary-btn">開始連線（三步驟）</button>
+          <button id="linkModalCancel" type="button" class="secondary-btn">取消</button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="welcomeNoticeModal"
+      class="modal welcome-notice-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="welcomeNoticeTitle"
+    >
+      <div class="modal-card welcome-notice-card">
+        <h3 id="welcomeNoticeTitle">歡迎</h3>
+        <p id="welcomeNoticeBody" class="modal-desc welcome-notice-body"></p>
+        <p class="welcome-notice-countdown" aria-live="polite">
+          <span id="welcomeNoticeCountdown">8</span> 秒後自動關閉 · 點一下即可關閉
+        </p>
+        <div class="modal-actions">
+          <button id="welcomeNoticeCloseBtn" type="button" class="primary-btn">知道了</button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="endFeedbackNoticeModal"
+      class="modal welcome-notice-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="endFeedbackNoticeTitle"
+    >
+      <div class="modal-card welcome-notice-card">
+        <h3 id="endFeedbackNoticeTitle">已抵達</h3>
+        <p id="endFeedbackNoticeBody" class="modal-desc welcome-notice-body"></p>
+        <p class="welcome-notice-countdown" aria-live="polite">
+          <span id="endFeedbackNoticeCountdown">12</span> 秒後自動關閉 · 點一下即可關閉
+        </p>
+        <div class="modal-actions">
+          <a
+            id="endFeedbackFormLink"
+            class="primary-btn hidden"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >填寫回饋</a>
+          <button id="endFeedbackNoticeCloseBtn" type="button" class="secondary-btn">關閉</button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="savePanoSpotModal"
+      class="modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="savePanoSpotTitle"
+    >
+      <div class="modal-card">
+        <h3 id="savePanoSpotTitle">儲存據點面向</h3>
+        <p class="modal-desc">會把目前環景節點與朝向存到管理後台「連結／QR → 各據點環景」，並可在此預覽 QR。</p>
+        <label class="modal-label" for="savePanoSpotLabel">顯示名稱</label>
+        <input id="savePanoSpotLabel" class="modal-input" type="text" maxlength="80" autocomplete="off" />
+        <p id="savePanoSpotMeta" class="modal-hint"></p>
+        <canvas id="savePanoSpotQr" class="admin-links-qr-canvas" width="200" height="200" aria-label="據點 QR 預覽"></canvas>
+        <p id="savePanoSpotStatus" class="modal-hint" aria-live="polite"></p>
+        <div class="modal-actions">
+          <button id="savePanoSpotConfirm" type="button" class="primary-btn">儲存</button>
+          <button id="savePanoSpotCancel" type="button" class="secondary-btn">關閉</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/pages/navigation.js"></script>
+  </body>
+</html>

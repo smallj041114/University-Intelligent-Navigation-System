@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>網站維護中｜銘傳大學桃園校區導航</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font-family: "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+        background:
+          radial-gradient(ellipse at top, #1e3a5f 0%, transparent 55%),
+          var(--bg);
+        color: var(--text);
+      }
+      main {
+        width: min(100%, 420px);
+        padding: 36px 28px;
+        border-radius: 18px;
+        background: color-mix(in srgb, var(--card) 92%, white 8%);
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+        text-align: center;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(1.6rem, 4vw, 2rem);
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+      .eta {
+        margin-top: 18px;
+        color: var(--accent);
+        font-size: 1.15rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>網站維護中</h1>
+      <p>系統正在更新，暫時無法使用導航服務。<br />造成不便，敬請見諒。</p>
+      <p class="eta">預計 {{ETA}} 完成</p>
+    </main>
+  </body>
+</html>
