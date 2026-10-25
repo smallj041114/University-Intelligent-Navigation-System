@@ -1,0 +1,1658 @@
+[
+  {
+    "id": "1789983802410",
+    "name": "m4001",
+    "url": "./images/M/4F/m4001.jpg",
+    "xPercent": 64.3084,
+    "yPercent": 73.2915,
+    "links": [
+      {
+        "id": "1790136507711_1789983805505",
+        "targetId": "1789983805505",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 18.627773885490228,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -95.07412537050425,
+        "entryPitch": 0,
+        "arrowPitch": -27.586047112138818,
+        "floorChange": null
+      },
+      {
+        "id": "1790639777103_1790636259930",
+        "targetId": "1790636259930",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 171.04500030170698,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": 179.168960057631,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983805505",
+    "name": "m4002",
+    "url": "./images/M/4F/m4002.jpg",
+    "xPercent": 64.3084,
+    "yPercent": 66.8966,
+    "links": [
+      {
+        "id": "1790136519666_1789983802410",
+        "targetId": "1789983802410",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 94.67917589219121,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -177.96224113833932,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136567000_1789983807688",
+        "targetId": "1789983807688",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -95.86269050572594,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 171.26536896943958,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137184009_1789983882930",
+        "targetId": "1789983882930",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -144.00425966903634,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -116.32971858269184,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M410",
+        "xPercent": 66.9475,
+        "yPercent": 64.6196,
+        "id": "dest_1789983805505_M410",
+        "isElevator": false,
+        "yaw": -29.942216427440428,
+        "pitch": 0
+      },
+      {
+        "name": "M411",
+        "xPercent": 67.0132,
+        "yPercent": 69.0567,
+        "id": "dest_1789983805505_M411",
+        "isElevator": false,
+        "yaw": 24.778371571765547,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1789983807688",
+    "name": "m4003",
+    "url": "./images/M/4F/m4003.jpg",
+    "xPercent": 64.3201,
+    "yPercent": 57.9639,
+    "links": [
+      {
+        "id": "1790136581131_1789983805505",
+        "targetId": "1789983805505",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -14.140517768169275,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 86.43859048543254,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136622529_1789983811391",
+        "targetId": "1789983811391",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 171.26536896943958,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -178.8609094911244,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137216263_1789983882930",
+        "targetId": "1789983882930",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 22.10219508592195,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 144.19382088525504,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983811391",
+    "name": "m4004",
+    "url": "./images/M/4F/m4004.jpg",
+    "xPercent": 64.3201,
+    "yPercent": 48.7393,
+    "links": [
+      {
+        "id": "1790136634046_1789983807688",
+        "targetId": "1789983807688",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 1.1989043980388487,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -9.164962903206174,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136650579_1789983813610",
+        "targetId": "1789983813610",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -177.04179945366855,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -169.78504843777444,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M409",
+        "xPercent": 67.0132,
+        "yPercent": 46.1704,
+        "id": "dest_1789983811391_M409",
+        "isElevator": false,
+        "yaw": -105.74681346414883,
+        "pitch": 0
+      },
+      {
+        "name": "M410",
+        "xPercent": 67.0132,
+        "yPercent": 50.6076,
+        "id": "dest_1789983811391_M410",
+        "isElevator": false,
+        "yaw": -71.97603690350621,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983813610",
+    "name": "m4005",
+    "url": "./images/M/4F/m4005.jpg",
+    "xPercent": 64.3201,
+    "yPercent": 40.7991,
+    "links": [
+      {
+        "id": "1790136659382_1789983811391",
+        "targetId": "1789983811391",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 10.514235815719019,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 1.6650915296625044,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136674687_1789983816698",
+        "targetId": "1789983816698",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -169.9958191503198,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 178.28260374529896,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983816698",
+    "name": "m4006",
+    "url": "./images/M/4F/m4006.jpg",
+    "xPercent": 64.3201,
+    "yPercent": 33.0925,
+    "links": [
+      {
+        "id": "1790136684427_1789983813610",
+        "targetId": "1789983813610",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 0.21103642978187054,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 10.622875031014019,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136702713_1789983820157",
+        "targetId": "1789983820157",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 90.00460103148782,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 67.67921029296508,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791219294540_1791195210971",
+        "targetId": "1791195210971",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -178.79704614893797,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": -92.66264716766148,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M408",
+        "xPercent": 60.576,
+        "yPercent": 29.7063,
+        "id": "dest_1789983816698_M408",
+        "isElevator": false,
+        "yaw": 134.36496833960814,
+        "pitch": 0
+      },
+      {
+        "name": "M409",
+        "xPercent": 67.0789,
+        "yPercent": 33.5596,
+        "id": "dest_1789983816698_M409",
+        "isElevator": false,
+        "yaw": -113.96856957924587,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1789983820157",
+    "name": "m4007",
+    "url": "./images/M/4F/m4007.jpg",
+    "xPercent": 60.3132,
+    "yPercent": 32.9757,
+    "links": [
+      {
+        "id": "1790136713923_1789983816698",
+        "targetId": "1789983816698",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -108.82171867371255,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -91.86201700528858,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136741382_1789983823523",
+        "targetId": "1789983823523",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 67.00529382571165,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 11.588346809478253,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M413",
+        "xPercent": 57.8172,
+        "yPercent": 40.6824,
+        "id": "dest_1789983820157_M413",
+        "isElevator": false,
+        "yaw": -12.889443377479893,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983823523",
+    "name": "m4008",
+    "url": "./images/M/4F/m4008.jpg",
+    "xPercent": 55.6495,
+    "yPercent": 32.9757,
+    "links": [
+      {
+        "id": "1790136755514_1789983820157",
+        "targetId": "1789983820157",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -167.7892590239348,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -111.71975961486726,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385933456_1791195377334",
+        "targetId": "1791195377334",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 10.449960356775136,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": 91.76593014070886,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M407",
+        "xPercent": 52.1025,
+        "yPercent": 29.823,
+        "id": "dest_1789983823523_M407",
+        "isElevator": false,
+        "yaw": 83.0456897593615,
+        "pitch": 0
+      },
+      {
+        "name": "M408",
+        "xPercent": 55.7809,
+        "yPercent": 29.823,
+        "id": "dest_1789983823523_M408",
+        "isElevator": false,
+        "yaw": 126.87845598690456,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983826597",
+    "name": "m4009",
+    "url": "./images/M/4F/m4009.jpg",
+    "xPercent": 49.8691,
+    "yPercent": 32.859,
+    "links": [
+      {
+        "id": "1791385966851_1791195377334",
+        "targetId": "1791195377334",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -98.1978799041226,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -87.54293465411502,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385980646_1791195374249",
+        "targetId": "1791195374249",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 82.38110628186791,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": 105.11663196723828,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791386103869_1791195413002",
+        "targetId": "1791195413002",
+        "targetScopeKey": "mcu_nav_nodes_m_5",
+        "yaw": -9.54912579648817,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 170.31522241223826,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1789983829277",
+    "name": "m4010",
+    "url": "./images/M/4F/m4010.jpg",
+    "xPercent": 45.2054,
+    "yPercent": 32.859,
+    "links": [
+      {
+        "id": "1790136819073_1789983832089",
+        "targetId": "1789983832089",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 87.30584340933092,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 103.30312815524303,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791386007108_1791195374249",
+        "targetId": "1791195374249",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -95.96210041259144,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -74.66489061590028,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M406",
+        "xPercent": 42.9721,
+        "yPercent": 29.823,
+        "id": "dest_1789983829277_M406",
+        "isElevator": false,
+        "yaw": 153.25012141061006,
+        "pitch": 0
+      },
+      {
+        "name": "M407",
+        "xPercent": 47.0446,
+        "yPercent": 29.9398,
+        "id": "dest_1789983829277_M407",
+        "isElevator": false,
+        "yaw": -157.60717036987865,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983832089",
+    "name": "m4011",
+    "url": "./images/M/4F/m4011.jpg",
+    "xPercent": 39.7535,
+    "yPercent": 32.859,
+    "links": [
+      {
+        "id": "1790136827926_1789983829277",
+        "targetId": "1789983829277",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -77.97476321164203,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -93.21883461326996,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136844360_1789983836111",
+        "targetId": "1789983836111",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 103.66965940880016,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -26.71512750623549,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M412-1",
+        "xPercent": 42.0525,
+        "yPercent": 40.3321,
+        "id": "dest_1789983832089_M412-1",
+        "isElevator": false,
+        "yaw": 2.9898227281390746,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983836111",
+    "name": "m4012",
+    "url": "./images/M/4F/m4012.jpg",
+    "xPercent": 35.0241,
+    "yPercent": 32.9757,
+    "links": [
+      {
+        "id": "1790136856850_1789983832089",
+        "targetId": "1789983832089",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 152.6354697862905,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -78.26599111428817,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136878254_1789983840530",
+        "targetId": "1789983840530",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -114.75778023455143,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -159.20783220508224,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791217861845_1791195191776",
+        "targetId": "1791195191776",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 67.8321155631545,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -108.07870720492053,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M405",
+        "xPercent": 32.4623,
+        "yPercent": 32.7422,
+        "id": "dest_1789983836111_M405",
+        "isElevator": false,
+        "yaw": 2.7132566303049543,
+        "pitch": 0
+      },
+      {
+        "name": "M406",
+        "xPercent": 38.4397,
+        "yPercent": 29.823,
+        "id": "dest_1789983836111_M406",
+        "isElevator": false,
+        "yaw": 117.07665112500877,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1789983840530",
+    "name": "m4013",
+    "url": "./images/M/4F/m4013.jpg",
+    "xPercent": 34.9584,
+    "yPercent": 40.2153,
+    "links": [
+      {
+        "id": "1790136888328_1789983836111",
+        "targetId": "1789983836111",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 20.31476095915548,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 63.691927808317246,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136905118_1789983845291",
+        "targetId": "1789983845291",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -159.5131739591646,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 79.83056571875426,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983845291",
+    "name": "m4014",
+    "url": "./images/M/4F/m4014.jpg",
+    "xPercent": 34.9584,
+    "yPercent": 48.2722,
+    "links": [
+      {
+        "id": "1790136917189_1789983840530",
+        "targetId": "1789983840530",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -101.19234169266593,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 20.34436785738842,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136935897_1789983850366",
+        "targetId": "1789983850366",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 79.9338372088065,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 153.5498368381834,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M404",
+        "xPercent": 32.3309,
+        "yPercent": 50.7243,
+        "id": "dest_1789983845291_M404",
+        "isElevator": false,
+        "yaw": 149.6359198068709,
+        "pitch": 0
+      },
+      {
+        "name": "M405",
+        "xPercent": 32.3309,
+        "yPercent": 45.5866,
+        "id": "dest_1789983845291_M405",
+        "isElevator": false,
+        "yaw": -171.8543295436093,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983850366",
+    "name": "m4015",
+    "url": "./images/M/4F/m4015.jpg",
+    "xPercent": 34.9584,
+    "yPercent": 58.0806,
+    "links": [
+      {
+        "id": "1790136946369_1789983845291",
+        "targetId": "1789983845291",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -26.227853049006853,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -100.81924310930975,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790136984078_1789983854693",
+        "targetId": "1789983854693",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 154.17293160863846,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -66.07508619715975,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983854693",
+    "name": "m4016",
+    "url": "./images/M/4F/m4016.jpg",
+    "xPercent": 35.1554,
+    "yPercent": 65.0867,
+    "links": [
+      {
+        "id": "1790136994577_1789983850366",
+        "targetId": "1789983850366",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 112.7676716721437,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -26.56364206052922,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137011924_1789983858772",
+        "targetId": "1789983858772",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -156.46151346722172,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -116.89062023558199,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790639898367_1790636252093",
+        "targetId": "1790636252093",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -67.16983701922265,
+        "pitch": 0,
+        "distance": 4,
+        "entryYaw": 174.3098655577566,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M403",
+        "xPercent": 32.4623,
+        "yPercent": 68.8232,
+        "id": "dest_1789983854693_M403",
+        "isElevator": false,
+        "yaw": -18.689005541908728,
+        "pitch": 0
+      },
+      {
+        "name": "M404",
+        "xPercent": 32.4623,
+        "yPercent": 64.3861,
+        "id": "dest_1789983854693_M404",
+        "isElevator": false,
+        "yaw": 15.423392623936138,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1789983858772",
+    "name": "m4017",
+    "url": "./images/M/4F/m4017.jpg",
+    "xPercent": 40.0819,
+    "yPercent": 63.3352,
+    "links": [
+      {
+        "id": "1790137023636_1789983854693",
+        "targetId": "1789983854693",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 65.79831985906418,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 21.922790780463515,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137044956_1789983863254",
+        "targetId": "1789983863254",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -117.44207970795105,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -70.66029295640323,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M412-1",
+        "xPercent": 41.8554,
+        "yPercent": 58.4309,
+        "id": "dest_1789983858772_M412-1",
+        "isElevator": false,
+        "yaw": 165.3503508137503,
+        "pitch": 0
+      },
+      {
+        "name": "M402",
+        "xPercent": 38.8339,
+        "yPercent": 66.9549,
+        "id": "dest_1789983858772_M402",
+        "isElevator": false,
+        "yaw": 39.70377092317517,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983863254",
+    "name": "m4018",
+    "url": "./images/M/4F/m4018.jpg",
+    "xPercent": 44.4829,
+    "yPercent": 63.2184,
+    "links": [
+      {
+        "id": "1790137055818_1789983858772",
+        "targetId": "1789983858772",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 99.19882602081543,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 63.46608113772402,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137071720_1789983869018",
+        "targetId": "1789983869018",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -70.91569277242195,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -20.031028820471533,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M402",
+        "xPercent": 43.4319,
+        "yPercent": 67.0717,
+        "id": "dest_1789983863254_M402",
+        "isElevator": false,
+        "yaw": 31.426340883331363,
+        "pitch": 0
+      },
+      {
+        "name": "M412",
+        "xPercent": 46.3878,
+        "yPercent": 58.5477,
+        "id": "dest_1789983863254_M412",
+        "isElevator": false,
+        "yaw": -138.5013866855582,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983869018",
+    "name": "m4019",
+    "url": "./images/M/4F/m4019.jpg",
+    "xPercent": 48.6211,
+    "yPercent": 63.2184,
+    "links": [
+      {
+        "id": "1790137081379_1789983863254",
+        "targetId": "1789983863254",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 161.03517228372726,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 107.76372749970551,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137094122_1789983874097",
+        "targetId": "1789983874097",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -19.38588946047537,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 5.421913080642298,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983874097",
+    "name": "m4020",
+    "url": "./images/M/4F/m4020.jpg",
+    "xPercent": 53.0221,
+    "yPercent": 63.1016,
+    "links": [
+      {
+        "id": "1790137105755_1789983869018",
+        "targetId": "1789983869018",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -174.52024150725873,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 160.58754933139573,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137124008_1789983878175",
+        "targetId": "1789983878175",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 5.235963702703316,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 17.279472337658603,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M401",
+        "xPercent": 52.825,
+        "yPercent": 67.3052,
+        "id": "dest_1789983874097_M401",
+        "isElevator": false,
+        "yaw": 104.71188930555411,
+        "pitch": 0
+      },
+      {
+        "name": "M412-3",
+        "xPercent": 52.6936,
+        "yPercent": 58.6645,
+        "id": "dest_1789983874097_M412-3",
+        "isElevator": false,
+        "yaw": -92.02695281708753,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983878175",
+    "name": "m4021",
+    "url": "./images/M/4F/m4021.jpg",
+    "xPercent": 57.9485,
+    "yPercent": 62.9849,
+    "links": [
+      {
+        "id": "1790137134033_1789983874097",
+        "targetId": "1789983874097",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -161.88303066133585,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -174.43377331368663,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137151636_1789983882930",
+        "targetId": "1789983882930",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 17.307890374297926,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 18.079976651964216,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M412-2",
+        "xPercent": 58.0142,
+        "yPercent": 58.6645,
+        "id": "dest_1789983878175_M412-2",
+        "isElevator": false,
+        "yaw": -83.60725133218614,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789983882930",
+    "name": "m4022",
+    "url": "./images/M/4F/m4022.jpg",
+    "xPercent": 61.4185,
+    "yPercent": 63.0094,
+    "links": [
+      {
+        "id": "1790137160818_1789983878175",
+        "targetId": "1789983878175",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -163.24436469663328,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -162.52560198834453,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137194435_1789983805505",
+        "targetId": "1789983805505",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 66.99720018035771,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 37.87095622464267,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790137226730_1789983807688",
+        "targetId": "1789983807688",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -34.808865029641765,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -149.47636527822016,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M401-1",
+        "xPercent": 60.1819,
+        "yPercent": 66.9549,
+        "id": "dest_1789983882930_M401-1",
+        "isElevator": false,
+        "yaw": 106.35867396273954,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1790636247617",
+    "name": "m4023",
+    "url": "./images/M/4F/m4023.jpg",
+    "xPercent": 35.532,
+    "yPercent": 84.5659,
+    "links": [
+      {
+        "id": "1790638508963_1790636174347",
+        "targetId": "1790636174347",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": 168.78540429654316,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -155.4446939438534,
+        "entryPitch": 0,
+        "arrowPitch": -51.36288659756813,
+        "floorChange": "down"
+      },
+      {
+        "id": "1790638530793_1790636252093",
+        "targetId": "1790636252093",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 123.08433332016403,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -7.968822278125913,
+        "entryPitch": 0,
+        "arrowPitch": -9.74145995812502,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1790636252093",
+    "name": "m4024",
+    "url": "./images/M/4F/m4024.jpg",
+    "xPercent": 35.5691,
+    "yPercent": 78.1065,
+    "links": [
+      {
+        "id": "1790638545761_1790636247617",
+        "targetId": "1790636247617",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -131.5938187683691,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -45.60849249023323,
+        "entryPitch": 0,
+        "arrowPitch": -45.56411515795671,
+        "floorChange": "down"
+      },
+      {
+        "id": "1790638584953_1790636323992",
+        "targetId": "1790636323992",
+        "targetScopeKey": "mcu_nav_nodes_m_5",
+        "yaw": 177.7059244657475,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 5.2994601579707705,
+        "entryPitch": 0,
+        "arrowPitch": -6.089970219739093,
+        "floorChange": "up"
+      },
+      {
+        "id": "1790639888279_1789983854693",
+        "targetId": "1789983854693",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -5.2520462574339035,
+        "pitch": 0,
+        "distance": 4,
+        "entryYaw": 111.97068687645879,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1790636256184",
+    "name": "m4025",
+    "url": "./images/M/4F/m4025.jpg",
+    "xPercent": 63.9339,
+    "yPercent": 84.8295,
+    "links": [
+      {
+        "id": "1790638867135_1790636182030",
+        "targetId": "1790636182030",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": 15.804249270596983,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -2.775358418326391,
+        "entryPitch": 0,
+        "arrowPitch": -54.94000089361533,
+        "floorChange": "down"
+      },
+      {
+        "id": "1790638887269_1790636259930",
+        "targetId": "1790636259930",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 52.68403412263939,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -4.311310363472558,
+        "entryPitch": 0,
+        "arrowPitch": -12.87304241914839,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1790636259930",
+    "name": "m4026",
+    "url": "./images/M/4F/m4026.jpg",
+    "xPercent": 63.9339,
+    "yPercent": 77.9088,
+    "links": [
+      {
+        "id": "1790638901397_1790636256184",
+        "targetId": "1790636256184",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 160.33174068018434,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -154.22494397282298,
+        "entryPitch": 0,
+        "arrowPitch": -49.01045227145099,
+        "floorChange": "down"
+      },
+      {
+        "id": "1790638929120_1790636332619",
+        "targetId": "1790636332619",
+        "targetScopeKey": "mcu_nav_nodes_m_5",
+        "yaw": -159.69125158262042,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -45.650801961146044,
+        "entryPitch": 0,
+        "arrowPitch": -10.307791703385265,
+        "floorChange": "up"
+      },
+      {
+        "id": "1790639767761_1789983802410",
+        "targetId": "1789983802410",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -29.046970656573762,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": 2.846369379085786,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195191776",
+    "name": "m4027",
+    "url": "./images/M/4F/m4027.jpg",
+    "xPercent": 35.0898,
+    "yPercent": 28.3051,
+    "links": [
+      {
+        "id": "1791217337509_1791195107344",
+        "targetId": "1791195107344",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": 162.02374838284436,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -92.92001216887093,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791217394808_1791195196647",
+        "targetId": "1791195196647",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -146.9695774273382,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -140.61157964358392,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791217875515_1789983836111",
+        "targetId": "1789983836111",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 79.0131709548138,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -115.65435281271925,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M棟4F電梯(左)",
+        "xPercent": 32.3309,
+        "yPercent": 24.802,
+        "id": "dest_1791195191776_M棟4F電梯(左)",
+        "isElevator": true,
+        "yaw": -167.78969040772017,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195196647",
+    "name": "m4028",
+    "url": "./images/M/4F/m4028.jpg",
+    "xPercent": 32.9221,
+    "yPercent": 21.9996,
+    "links": [
+      {
+        "id": "1791217404184_1791195191776",
+        "targetId": "1791195191776",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 43.221549739100624,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 31.320269710011303,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791217419835_1791195202269",
+        "targetId": "1791195202269",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 178.01141342268193,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 138.15959774427802,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195202269",
+    "name": "m4029",
+    "url": "./images/M/4F/m4029.jpg",
+    "xPercent": 29.1123,
+    "yPercent": 21.7661,
+    "links": [
+      {
+        "id": "1791217430752_1791195196647",
+        "targetId": "1791195196647",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -39.79347900660923,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -5.139573964699366,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791217444140_1791195205982",
+        "targetId": "1791195205982",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 53.265099680758794,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 96.05514119807185,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195205982",
+    "name": "m4030",
+    "url": "./images/M/4F/m4030.jpg",
+    "xPercent": 28.9809,
+    "yPercent": 28.5386,
+    "links": [
+      {
+        "id": "1791217460479_1791195202269",
+        "targetId": "1791195202269",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -82.75415794347896,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -133.2838835217783,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791217547734_1791195384082",
+        "targetId": "1791195384082",
+        "targetScopeKey": "mcu_nav_nodes_m_5",
+        "yaw": 1.3889172600180473,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 53.17151883454369,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195210971",
+    "name": "m4031",
+    "url": "./images/M/4F/m4031.jpg",
+    "xPercent": 64.3858,
+    "yPercent": 26.5535,
+    "links": [
+      {
+        "id": "1791218836005_1791195125257",
+        "targetId": "1791195125257",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": 9.571649101393746,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -157.668367448504,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791218862470_1791195302247",
+        "targetId": "1791195302247",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -43.90839061379603,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": 132.02511371649172,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791219302759_1789983816698",
+        "targetId": "1789983816698",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 91.25144377406639,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": -0.3812347757917678,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M棟4F電梯(右)",
+        "xPercent": 66.9475,
+        "yPercent": 24.802,
+        "id": "dest_1791195210971_M棟4F電梯(右)",
+        "isElevator": true,
+        "yaw": -11.682930978148761,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195302247",
+    "name": "m4032",
+    "url": "./images/M/4F/m4032.jpg",
+    "xPercent": 66.225,
+    "yPercent": 22.2332,
+    "links": [
+      {
+        "id": "1791218871764_1791195210971",
+        "targetId": "1791195210971",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -32.89792693387062,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": 138.7139821754863,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791218888381_1791195307301",
+        "targetId": "1791195307301",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -178.21114769250096,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -151.9142665253832,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195307301",
+    "name": "m4033",
+    "url": "./images/M/4F/m4033.jpg",
+    "xPercent": 70.1005,
+    "yPercent": 22.3499,
+    "links": [
+      {
+        "id": "1791218900660_1791195302247",
+        "targetId": "1791195302247",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 30.048981972613944,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 3.2705556519935044,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791218924569_1791195313893",
+        "targetId": "1791195313893",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -60.41039693893896,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 106.20474081322652,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195313893",
+    "name": "m4034",
+    "url": "./images/M/4F/m4034.jpg",
+    "xPercent": 70.1662,
+    "yPercent": 28.7721,
+    "links": [
+      {
+        "id": "1791218937306_1791195307301",
+        "targetId": "1791195307301",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -74.99282108052785,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 118.00779415103875,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791218982289_1791195388053",
+        "targetId": "1791195388053",
+        "targetScopeKey": "mcu_nav_nodes_m_5",
+        "yaw": -163.19652182882885,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 8.772000659836579,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195353539",
+    "name": "m4035",
+    "url": "./images/M/4F/m4035.jpg",
+    "xPercent": 49.4422,
+    "yPercent": 38.5455,
+    "links": [
+      {
+        "id": "1791385846307_1789982252780",
+        "targetId": "1789982252780",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": -174.31943377492755,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 87.89940575556216,
+        "entryPitch": 0,
+        "arrowPitch": -35.878758490577745,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791385862456_1791195374249",
+        "targetId": "1791195374249",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 148.6623314533083,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -166.5085425670236,
+        "entryPitch": 0,
+        "arrowPitch": -5.896063365650665,
+        "floorChange": "up"
+      },
+      {
+        "id": "1791385892941_1791195377334",
+        "targetId": "1791195377334",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -144.02732221630467,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -179.0079570340589,
+        "entryPitch": 0,
+        "arrowPitch": -5,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195374249",
+    "name": "m4036",
+    "url": "./images/M/4F/m4036.jpg",
+    "xPercent": 47.4913,
+    "yPercent": 32.7656,
+    "links": [
+      {
+        "id": "1791385873529_1791195353539",
+        "targetId": "1791195353539",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 5.894420416929393,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -3.5247410151159784,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791385989348_1789983826597",
+        "targetId": "1789983826597",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -74.9411433235224,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -97.86879543112605,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385999979_1789983829277",
+        "targetId": "1789983829277",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 104.67191820154449,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": 85.79205955105567,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195377334",
+    "name": "m4037",
+    "url": "./images/M/4F/m4037.jpg",
+    "xPercent": 51.6881,
+    "yPercent": 32.8746,
+    "links": [
+      {
+        "id": "1791385901410_1791195353539",
+        "targetId": "1791195353539",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 6.1276695994963575,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -3.950929010806931,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791385943683_1789983823523",
+        "targetId": "1789983823523",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": -87.00153691747289,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -170.70819095847014,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385957679_1789983826597",
+        "targetId": "1789983826597",
+        "targetScopeKey": "mcu_nav_nodes_m_4",
+        "yaw": 92.09622607210099,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": 82.3362092559579,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  }
+]

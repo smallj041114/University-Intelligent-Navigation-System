@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "role": "admin",
+      "passwordHash": "請執行：node scripts/hash-admin-password.cjs \"你的密碼\" 後，把輸出的 passwordHash 貼到對應使用者"
+    },
+    {
+      "username": "qr",
+      "role": "qr",
+      "passwordHash": "同上；role=qr → 連結／QR＋據點面向"
+    },
+    {
+      "username": "notice",
+      "role": "qr_notice",
+      "passwordHash": "同上；role=qr_notice → 連結／QR＋網址公告（不含據點寫入）"
+    }
+  ]
+}

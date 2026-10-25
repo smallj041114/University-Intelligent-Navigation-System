@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>設定｜銘傳大學桃園校區導航</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./vendor/pannellum/pannellum.css"
+      onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css'"
+    />
+  </head>
+  <body class="arrow-settings-page">
+    <script>
+      fetch("/api/admin/session", { cache: "no-store", credentials: "same-origin" })
+        .then((res) => {
+          if (!res.ok) {
+            location.replace("/admin/login.html?next=" + encodeURIComponent("/settings.html"));
+          }
+        })
+        .catch(() => {
+          location.replace("/admin/login.html?next=" + encodeURIComponent("/settings.html"));
+        });
+    </script>
+    <div class="arrow-settings-shell">
+      <header class="arrow-settings-header">
+        <a href="./admin/" class="toolbar-btn">← 返回管理後台</a>
+        <h1 class="arrow-settings-title">設定</h1>
+        <p class="arrow-settings-desc">
+          依工作分開設定；變更會自動儲存。
+        </p>
+      </header>
+
+      <div class="arrow-settings-layout" id="arrowSettingsLayout">
+        <section class="arrow-settings-panel" aria-label="導航設定">
+          <nav class="settings-tabs" role="tablist" aria-label="設定分類">
+            <button type="button" class="settings-tab" role="tab" id="settingsTabLook" data-settings-tab="look" aria-controls="settingsPanelLook" aria-selected="true">環景外觀</button>
+            <button type="button" class="settings-tab" role="tab" id="settingsTabPlay" data-settings-tab="play" aria-controls="settingsPanelPlay" aria-selected="false">播放與距離</button>
+            <button type="button" class="settings-tab" role="tab" id="settingsTabBuildings" data-settings-tab="buildings" aria-controls="settingsPanelBuildings" aria-selected="false">校園大樓</button>
+            <button type="button" class="settings-tab" role="tab" id="settingsTabVisitor" data-settings-tab="visitor" aria-controls="settingsPanelVisitor" aria-selected="false">訪客起點</button>
+            <button type="button" class="settings-tab" role="tab" id="settingsTabCheck" data-settings-tab="check" aria-controls="settingsPanelCheck" aria-selected="false">資料檢查</button>
+          </nav>
+
+          <div id="settingsPanelLook" class="settings-tab-panel" role="tabpanel" aria-labelledby="settingsTabLook" data-settings-panel="look">
+            <h2 class="arrow-settings-section-title">地面箭頭</h2>
+            <p class="arrow-settings-section-desc">
+              右側可預覽。個別連線若有自訂值則優先。
+            </p>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="arrowSize">箭頭大小</label>
+                <output id="arrowSizeValue" for="arrowSize">56 px</output>
+              </div>
+              <input id="arrowSize" type="range" min="24" max="120" step="2" value="56" />
+            </div>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="arrowOpacity">透明度</label>
+                <output id="arrowOpacityValue" for="arrowOpacity">0.82</output>
+              </div>
+              <input id="arrowOpacity" type="range" min="0.1" max="1" step="0.01" value="0.82" />
+            </div>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="arrowPitch">俯角</label>
+                <output id="arrowPitchValue" for="arrowPitch">-32°</output>
+              </div>
+              <input id="arrowPitch" type="range" min="-85" max="-5" step="1" value="-32" />
+              <p class="arrow-settings-hint">數值愈小（愈負）箭頭愈貼近地面。</p>
+            </div>
+
+            <h2 class="arrow-settings-section-title">播放速度面板與小地圖</h2>
+            <p class="arrow-settings-section-desc">
+              調整外觀與位置。請直接拖曳右側預覽；播放中不會拖動。
+            </p>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="hudOpacity">面板透明度</label>
+                <output id="hudOpacityValue" for="hudOpacity">0.86</output>
+              </div>
+              <input id="hudOpacity" type="range" min="0.3" max="1" step="0.01" value="0.86" />
+            </div>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="hudScale">面板大小</label>
+                <output id="hudScaleValue" for="hudScale">100%</output>
+              </div>
+              <input id="hudScale" type="range" min="0.5" max="3" step="0.05" value="1" />
+            </div>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="hudCorner">面板位置</label>
+              </div>
+              <select id="hudCorner" class="arrow-settings-select">
+                <option value="top-left">左上</option>
+                <option value="top-right">右上</option>
+                <option value="bottom-left">左下</option>
+                <option value="bottom-right">右下</option>
+                <option value="custom">自訂（拖曳後）</option>
+              </select>
+              <p class="arrow-settings-hint">選四角會重設位置；也可直接拖曳預覽中的面板。</p>
+            </div>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="minimapScale">小地圖大小</label>
+                <output id="minimapScaleValue" for="minimapScale">100%</output>
+              </div>
+              <input id="minimapScale" type="range" min="0.5" max="3" step="0.05" value="1" />
+            </div>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="minimapCorner">小地圖位置</label>
+              </div>
+              <select id="minimapCorner" class="arrow-settings-select">
+                <option value="top-left">左上</option>
+                <option value="top-right" selected>右上</option>
+                <option value="bottom-left">左下</option>
+                <option value="bottom-right">右下</option>
+                <option value="custom">自訂（拖曳後）</option>
+              </select>
+              <p class="arrow-settings-hint">預覽小地圖可拖曳（僅預覽，無定位藍點）。</p>
+            </div>
+          </div>
+
+          <div id="settingsPanelPlay" class="settings-tab-panel" role="tabpanel" aria-labelledby="settingsTabPlay" data-settings-panel="play" hidden>
+            <h2 class="arrow-settings-section-title">轉彎輔助</h2>
+            <p class="arrow-settings-section-desc">
+              進站後若下一箭頭與目前面向差超過 15°，會自動旋轉對準。
+            </p>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="turnDuration">旋轉時間</label>
+                <output id="turnDurationValue" for="turnDuration">2.0 秒</output>
+              </div>
+              <input id="turnDuration" type="range" min="0.5" max="10" step="0.1" value="2" />
+              <p class="arrow-settings-hint">沿最短角度方向平滑轉向。</p>
+            </div>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="floorChangeDuration">上下樓抬頭／低頭時間</label>
+                <output id="floorChangeDurationValue" for="floorChangeDuration">0.8 秒</output>
+              </div>
+              <input id="floorChangeDuration" type="range" min="0.3" max="5" step="0.1" value="0.8" />
+              <p class="arrow-settings-hint">經樓梯連線離開時，抬頭或低頭動畫的秒數。</p>
+            </div>
+
+            <div class="arrow-settings-field">
+              <label class="node-auto-face-toggle" for="centerPathNextArrow">
+                <input id="centerPathNextArrow" type="checkbox" checked />
+                <span>進站後自動對準路徑下一個點</span>
+              </label>
+              <p class="arrow-settings-hint">已計算路徑時，優先把下一站箭頭對準畫面中央。</p>
+            </div>
+
+            <h2 class="arrow-settings-section-title">自動播放路徑</h2>
+            <p class="arrow-settings-section-desc">
+              調整導航播放「每站停留」的預設秒數，以及滑桿可調的最短與最長秒數。
+            </p>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="playDelayDefault">預設停留</label>
+                <output id="playDelayDefaultValue" for="playDelayDefault">1.0 秒</output>
+              </div>
+              <input id="playDelayDefault" type="number" min="0.1" max="60" step="0.1" value="1" />
+              <p class="arrow-settings-hint">進導覽頁時「每站停留」滑桿的初始秒數（須介於上下限之間）。</p>
+            </div>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="playDelayMin">停留下限</label>
+                <output id="playDelayMinValue" for="playDelayMin">0.2 秒</output>
+              </div>
+              <input id="playDelayMin" type="number" min="0.1" max="30" step="0.1" value="0.2" />
+              <p class="arrow-settings-hint">可設 0.1–30 秒；愈小播放愈快。</p>
+            </div>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="playDelayMax">停留上限</label>
+                <output id="playDelayMaxValue" for="playDelayMax">20.0 秒</output>
+              </div>
+              <input id="playDelayMax" type="number" min="0.2" max="60" step="0.1" value="20" />
+              <p class="arrow-settings-hint">可設 0.2–60 秒；愈大播放愈慢。</p>
+            </div>
+
+            <h2 class="arrow-settings-section-title">連線距離估算</h2>
+            <p class="arrow-settings-section-desc">
+              編輯模式新增同樓層連線時，依平面圖紅點距離自動帶入公尺數。
+            </p>
+
+            <div class="arrow-settings-field">
+              <div class="arrow-settings-field-head">
+                <label for="mapMetersPerPercent">平面圖 1% ≈ 幾公尺</label>
+                <output id="mapMetersPerPercentValue" for="mapMetersPerPercent">1.00 公尺</output>
+              </div>
+              <input id="mapMetersPerPercent" type="number" min="0.1" max="10" step="0.05" value="1" />
+              <p class="arrow-settings-hint">
+                預設 1.00。估算偏短請調大、偏長請調小（0.1–10）。只影響之後新連線，不會改已存距離。編輯模式平面圖右下角也可調。
+              </p>
+            </div>
+          </div>
+
+          <div id="settingsPanelBuildings" class="settings-tab-panel" role="tabpanel" aria-labelledby="settingsTabBuildings" data-settings-panel="buildings" hidden>
+            <h2 class="arrow-settings-section-title">校園地圖棟別熱點</h2>
+            <p class="arrow-settings-section-desc">
+              編輯大樓名稱、樓層與平面圖。關閉後地圖上仍顯示但變灰，無法進入。
+            </p>
+            <div id="campusBuildingsList" class="campus-buildings-editor"></div>
+          </div>
+
+          <div id="settingsPanelVisitor" class="settings-tab-panel" role="tabpanel" aria-labelledby="settingsTabVisitor" data-settings-panel="visitor" hidden>
+            <h2 class="arrow-settings-section-title">訪客起點與進校入口</h2>
+            <p class="arrow-settings-section-desc">
+              訪客頁起點按鈕（可用上下調整順序）、預設起點，以及校外導航抵達後接續室內路徑的節點。網址代碼選填；不填則分享時用節點名稱。
+            </p>
+            <div class="arrow-settings-field">
+              <label class="node-auto-face-toggle" for="visitorSearchHidePathNodes">
+                <input id="visitorSearchHidePathNodes" type="checkbox" checked />
+                <span>訪客搜尋隱藏路徑節點</span>
+              </label>
+              <p class="arrow-settings-hint">
+                開啟後，訪客頁起點／目的地搜尋只出現目的地與常用起點，不出現純走廊節點名稱。地圖點選、據點 QR、設環景為起點不受影響。
+              </p>
+            </div>
+            <div class="arrow-settings-field">
+              <label class="modal-label" for="visitorDefaultStartId">訪客頁預設起點</label>
+              <select id="visitorDefaultStartId" class="modal-input arrow-settings-select"></select>
+              <p class="arrow-settings-hint">進入訪客頁時預先選取的起點（「地圖上定位」或下方自訂起點）。</p>
+            </div>
+            <article id="indoorEntryCard" class="visitor-start-card indoor-entry-card" aria-label="進入校內起點"></article>
+            <div id="visitorStartsList" class="visitor-starts-editor"></div>
+            <button id="visitorStartAddBtn" type="button" class="secondary-btn visitor-start-add-btn">新增起點</button>
+          </div>
+
+          <div id="settingsPanelCheck" class="settings-tab-panel" role="tabpanel" aria-labelledby="settingsTabCheck" data-settings-panel="check" hidden>
+            <h2 class="arrow-settings-section-title">資料檢查</h2>
+            <p class="arrow-settings-section-desc">
+              檢查大樓定義、熱點、節點連線，以及本機是否缺少平面圖／環景檔。需用 start-server 啟動。
+            </p>
+            <label class="data-validate-reverse">
+              <input id="dataValidateReverse" type="checkbox" />
+              一併檢查同樓層缺回頭路
+            </label>
+            <button id="dataValidateBtn" type="button" class="secondary-btn">檢查大樓與節點資料</button>
+            <div id="dataValidateResult" class="data-validate-result hidden" aria-live="polite"></div>
+          </div>
+
+          <div class="arrow-settings-actions">
+            <button id="arrowSettingsReset" type="button" class="secondary-btn">重設為預設</button>
+            <p class="arrow-settings-hint">會重設環景外觀、播放、訪客起點與大樓熱點開關；不會刪節點檔。</p>
+            <p id="arrowSettingsStatus" class="arrow-settings-status" aria-live="polite">已載入目前設定</p>
+          </div>
+        </section>
+
+        <section class="arrow-settings-preview" id="arrowSettingsPreview" aria-label="即時預覽">
+          <h2 class="arrow-settings-preview-title">環景預覽</h2>
+          <p class="arrow-settings-preview-hint">
+            預覽會依實際播放視窗比例縮放，HUD／小地圖位置會與播放畫面一致。可直接拖曳調整。
+          </p>
+          <div class="arrow-preview-stage">
+            <header class="panorama-topbar">
+              <strong>全景檢視（預覽用）</strong>
+              <div class="panorama-topbar-actions">
+                <span class="panorama-action-btn">☰ 選單</span>
+                <span class="panorama-action-btn panorama-pause-auto-btn">⏸ 暫停導覽</span>
+                <span class="panorama-close-btn">關閉</span>
+              </div>
+            </header>
+            <div class="panorama-viewer-wrap arrow-preview-viewer-wrap">
+              <div id="arrowPreviewViewer" class="panorama-viewer-host arrow-preview-viewer"></div>
+              <div id="previewOverlayPlane" class="preview-overlay-plane">
+                <div id="hudSettingsPreview" class="play-speed-hud play-speed-hud-top-left overlay-layout-edit">
+                  <p class="play-speed-label">當前速度</p>
+                  <p class="play-speed-value">停留 1.0 秒</p>
+                  <div class="play-speed-keys">
+                    <button type="button" class="play-speed-btn" tabindex="-1">
+                      <kbd>−</kbd>
+                      <span>減速</span>
+                    </button>
+                    <button type="button" class="play-speed-btn" tabindex="-1">
+                      <kbd>+</kbd>
+                      <span>加速</span>
+                    </button>
+                  </div>
+                  <p class="play-speed-hint">空白鍵暫停／繼續；鍵盤 <kbd>+</kbd> / <kbd>−</kbd> 或 <kbd>↑</kbd> / <kbd>↓</kbd></p>
+                </div>
+                <div id="minimapSettingsPreview" class="panorama-minimap panorama-minimap-top-right overlay-layout-edit">
+                  <div class="panorama-minimap-header">
+                    <span class="panorama-minimap-label">S 棟 1F</span>
+                  </div>
+                  <div class="panorama-minimap-stage">
+                    <div class="panorama-minimap-map-stage">
+                      <img class="panorama-minimap-image" src="./images/S/floorplan-s-1F.jpg" alt="S棟1F小地圖" />
+                      <svg class="panorama-minimap-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+                      <div class="panorama-minimap-markers" aria-hidden="true"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script type="module" src="/src/pages/settings.js"></script>
+  </body>
+</html>

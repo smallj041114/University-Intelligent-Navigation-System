@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>監控／修改紀錄｜管理後台</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="admin-links-page">
+    <main class="admin-links-shell">
+      <header class="admin-home-header">
+        <p class="admin-login-kicker">管理後台</p>
+        <h1 class="admin-login-title">監控／修改紀錄</h1>
+        <p class="admin-login-desc">
+          訪客無帳號登入；線上人數依頁面心跳估算（約 90 秒無回應視為離線）。修改紀錄僅含會影響伺服器的操作。僅完整管理員可查看。
+        </p>
+      </header>
+
+      <section class="admin-links-section panel-section">
+        <h2 class="admin-links-heading">訪客監控</h2>
+        <div class="admin-presence-cards">
+          <div class="admin-presence-card">
+            <p class="admin-presence-label">目前線上</p>
+            <p id="presenceOnline" class="admin-presence-value">—</p>
+          </div>
+          <div class="admin-presence-card">
+            <p class="admin-presence-label">訪客頁</p>
+            <p id="presenceVisitor" class="admin-presence-value">—</p>
+          </div>
+          <div class="admin-presence-card">
+            <p class="admin-presence-label">導覽頁</p>
+            <p id="presenceNavigation" class="admin-presence-value">—</p>
+          </div>
+          <div class="admin-presence-card">
+            <p class="admin-presence-label">今日進站</p>
+            <p id="presenceToday" class="admin-presence-value">—</p>
+          </div>
+        </div>
+        <p id="presenceStatus" class="admin-links-hint" aria-live="polite"></p>
+        <div class="admin-audit-table-wrap">
+          <table class="admin-audit-table" aria-label="線上訪客清單">
+            <thead>
+              <tr>
+                <th scope="col">頁面</th>
+                <th scope="col">IP（遮罩）</th>
+                <th scope="col">最後心跳</th>
+              </tr>
+            </thead>
+            <tbody id="presenceTableBody">
+              <tr>
+                <td colspan="3">載入中…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="admin-links-section panel-section">
+        <h2 class="admin-links-heading">近 30 日每日訪客數</h2>
+        <p class="admin-links-hint">
+          依瀏覽器 session 去重的進站次數（台灣日）。同 Wi‑Fi 多設備會分開計算；清快取／無痕可能多算。
+        </p>
+        <p id="visitorDailyStatus" class="admin-links-hint" aria-live="polite"></p>
+        <div class="admin-audit-table-wrap">
+          <table class="admin-audit-table" aria-label="每日訪客數">
+            <thead>
+              <tr>
+                <th scope="col">日期</th>
+                <th scope="col">進站人數</th>
+              </tr>
+            </thead>
+            <tbody id="visitorDailyTableBody">
+              <tr>
+                <td colspan="2">載入中…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="admin-visitor-daily-pager" id="visitorDailyPager" hidden>
+          <button id="visitorDailyPrevBtn" type="button" class="secondary-btn">上一頁</button>
+          <span id="visitorDailyPageLabel" class="admin-links-hint" aria-live="polite"></span>
+          <button id="visitorDailyNextBtn" type="button" class="secondary-btn">下一頁</button>
+        </div>
+      </section>
+
+      <section class="admin-links-section panel-section">
+        <h2 class="admin-links-heading">管理員操作紀錄</h2>
+        <div class="admin-audit-filters">
+          <label class="modal-label" for="auditUsername">帳號</label>
+          <input id="auditUsername" class="modal-input" type="text" maxlength="64" placeholder="模糊比對" />
+          <label class="modal-label" for="auditRole">角色</label>
+          <select id="auditRole" class="modal-input">
+            <option value="">全部</option>
+            <option value="admin">管理員</option>
+            <option value="qr">二級（QR／據點）</option>
+            <option value="qr_notice">二級（QR／公告）</option>
+          </select>
+          <label class="modal-label" for="auditQuery">操作關鍵字</label>
+          <input id="auditQuery" class="modal-input" type="text" maxlength="80" placeholder="動作或詳情" />
+          <label class="modal-label" for="auditStatusFilter">結果</label>
+          <select id="auditStatusFilter" class="modal-input">
+            <option value="">全部</option>
+            <option value="ok">成功</option>
+            <option value="fail">失敗</option>
+          </select>
+          <label class="modal-label" for="auditLimit">筆數</label>
+          <select id="auditLimit" class="modal-input">
+            <option value="100">100</option>
+            <option value="200" selected>200</option>
+            <option value="500">500</option>
+          </select>
+          <label class="admin-links-check">
+            <input id="auditAutoRefresh" type="checkbox" />
+            每 30 秒自動重新整理
+          </label>
+        </div>
+        <div class="admin-audit-toolbar">
+          <button id="auditRefreshBtn" type="button" class="secondary-btn">重新整理</button>
+          <p id="auditStatus" class="admin-links-status" aria-live="polite"></p>
+        </div>
+        <div class="admin-audit-table-wrap">
+          <table class="admin-audit-table" aria-label="伺服器修改紀錄">
+            <thead>
+              <tr>
+                <th scope="col">時間</th>
+                <th scope="col">帳號</th>
+                <th scope="col">角色</th>
+                <th scope="col">操作</th>
+                <th scope="col">詳情</th>
+                <th scope="col">IP</th>
+                <th scope="col">結果</th>
+              </tr>
+            </thead>
+            <tbody id="auditTableBody">
+              <tr>
+                <td colspan="7">載入中…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <nav class="admin-page-footer" aria-label="頁面導覽">
+        <a class="admin-page-footer-link" href="./index.html">管理後台</a>
+      </nav>
+    </main>
+    <script type="module" src="/src/pages/admin-audit.js"></script>
+  </body>
+</html>

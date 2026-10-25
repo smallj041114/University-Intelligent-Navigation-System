@@ -1,0 +1,830 @@
+[
+  {
+    "id": "1781156976695",
+    "name": "s1001",
+    "url": "./images/S/1F/s1001.jpg",
+    "xPercent": 27.1417,
+    "yPercent": 63.21,
+    "links": [
+      {
+        "id": "1781159147230_1781088747152",
+        "targetId": "1781088747152",
+        "targetScopeKey": "mcu_nav_nodes_s_2",
+        "yaw": 129.8990046119577,
+        "pitch": 0,
+        "distance": 12,
+        "entryYaw": 170.88458912400029,
+        "entryPitch": 0,
+        "floorChange": "up"
+      },
+      {
+        "id": "1783473130878_1781157012296",
+        "targetId": "1781157012296",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -164.45927378293538,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -168.6261333997761,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1781157012296",
+    "name": "s1002",
+    "url": "./images/S/1F/s1002.jpg",
+    "xPercent": 27.2731,
+    "yPercent": 51.4232,
+    "links": [
+      {
+        "id": "1783473784894_1781156976695",
+        "targetId": "1781156976695",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 11.837970812523508,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 125.30436297730921,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1785864293190_1781157066138",
+        "targetId": "1781157066138",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -170.81947258921025,
+        "pitch": 0,
+        "distance": 7,
+        "entryYaw": -178.76812497897083,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790097610836_1781089126543",
+        "targetId": "1781089126543",
+        "targetScopeKey": "mcu_nav_nodes_s_2",
+        "yaw": -61.84286215771169,
+        "pitch": 0,
+        "distance": 14,
+        "entryYaw": -121.64020926526558,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "id": "1781157248491_dest",
+        "name": "S棟1F電梯",
+        "yaw": -53.13014392278302,
+        "pitch": 0,
+        "xPercent": 32.0682,
+        "yPercent": 52.7094,
+        "isElevator": true
+      },
+      {
+        "id": "1781157724447_dest",
+        "name": "S109",
+        "yaw": 63.04929771356285,
+        "pitch": 0,
+        "xPercent": 24.5667,
+        "yPercent": 52.9767,
+        "isElevator": false
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1781157066138",
+    "name": "s1003",
+    "url": "./images/S/1F/s1003.jpg",
+    "xPercent": 27.2731,
+    "yPercent": 36.2521,
+    "links": [
+      {
+        "id": "1783473197457_1781157289650",
+        "targetId": "1781157289650",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -85.44613020729054,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 172.74758283504553,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783473704936_1781157012296",
+        "targetId": "1781157012296",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 3.5261034691335453,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 11.837970812523508,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "id": "1781157178737_dest",
+        "name": "S109",
+        "yaw": 67.46705743526934,
+        "pitch": 0,
+        "xPercent": 24.7073,
+        "yPercent": 38.3222,
+        "isElevator": false
+      },
+      {
+        "id": "1781157191333_dest",
+        "name": "S108",
+        "yaw": 117.6593464207242,
+        "pitch": 0,
+        "xPercent": 24.7541,
+        "yPercent": 33.4929,
+        "isElevator": false
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1781157289650",
+    "name": "s1004",
+    "url": "./images/S/1F/s1004.jpg",
+    "xPercent": 31.1471,
+    "yPercent": 35.9085,
+    "links": [
+      {
+        "id": "1783473235508_1781157315219",
+        "targetId": "1781157315219",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 176.5117175788182,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 91.58042575489571,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1785864332704_1781157066138",
+        "targetId": "1781157066138",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 9.371631224936323,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 95.64723230552795,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1786379141080_1783427634280",
+        "targetId": "1783427634280",
+        "targetScopeKey": "mcu_nav_nodes_s_2",
+        "yaw": -76.54830680852112,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -11.2914889281343,
+        "entryPitch": 0,
+        "arrowPitch": -16.689308263886517,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1781157315219",
+    "name": "s1005",
+    "url": "./images/S/1F/s1005.jpg",
+    "xPercent": 37.5858,
+    "yPercent": 33.2178,
+    "links": [
+      {
+        "id": "1783473262001_1781157441665",
+        "targetId": "1781157441665",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 91.58042575489571,
+        "pitch": 0,
+        "distance": 7,
+        "entryYaw": 88.8876726814924,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783473661029_1781157289650",
+        "targetId": "1781157289650",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -85.67251269937651,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 13.24693468032558,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "id": "1781157751065_dest",
+        "name": "S107",
+        "yaw": -23.42669930208615,
+        "pitch": 0,
+        "xPercent": 36.0422,
+        "yPercent": 28.8301,
+        "isElevator": false
+      },
+      {
+        "id": "1781157779498_dest",
+        "name": "S104",
+        "yaw": 142.64321823835473,
+        "pitch": 0,
+        "xPercent": 39.5564,
+        "yPercent": 44.5357,
+        "isElevator": false
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1781157441665",
+    "name": "s1006",
+    "url": "./images/S/1F/s1006.jpg",
+    "xPercent": 46.3878,
+    "yPercent": 33.1011,
+    "links": [
+      {
+        "id": "1783473286888_1781157448009",
+        "targetId": "1781157448009",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 88.8876726814924,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 101.12396396971133,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783473634404_1781157315219",
+        "targetId": "1781157315219",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -88.4727284726817,
+        "pitch": 0,
+        "distance": 7,
+        "entryYaw": -85.67251269937651,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "id": "1781157805394_dest",
+        "name": "S107",
+        "yaw": 12.306442214053845,
+        "pitch": 0,
+        "xPercent": 47.176,
+        "yPercent": 29.4727,
+        "isElevator": false
+      },
+      {
+        "id": "1781157814759_dest",
+        "name": "S104",
+        "yaw": -138.86231523661195,
+        "pitch": 0,
+        "xPercent": 43.4976,
+        "yPercent": 44.4189,
+        "isElevator": false
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1781157448009",
+    "name": "s1007",
+    "url": "./images/S/1F/s1007.jpg",
+    "xPercent": 52.825,
+    "yPercent": 32.8677,
+    "links": [
+      {
+        "id": "1783473302266_1781157453717",
+        "targetId": "1781157453717",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 101.12396396971133,
+        "pitch": 0,
+        "distance": 8,
+        "entryYaw": 76.39944911896839,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783473608623_1781157441665",
+        "targetId": "1781157441665",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -80.14671085124087,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -88.4727284726817,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783477021909_1783476431940",
+        "targetId": "1783476431940",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -172.48665580776083,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 95.87508181438625,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "id": "1781157850003_dest",
+        "name": "S106",
+        "yaw": -49.974172285572195,
+        "pitch": 0,
+        "xPercent": 50.7887,
+        "yPercent": 29.356,
+        "isElevator": false
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1781157453717",
+    "name": "s1008",
+    "url": "./images/S/1F/s1008.jpg",
+    "xPercent": 63.5319,
+    "yPercent": 32.6343,
+    "links": [
+      {
+        "id": "1783473322706_1781157460267",
+        "targetId": "1781157460267",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 76.39944911896839,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 88.68813036292056,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783473569046_1781157448009",
+        "targetId": "1781157448009",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -103.3849158335646,
+        "pitch": 0,
+        "distance": 8,
+        "entryYaw": -80.21548853881109,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "id": "1781157870158_dest",
+        "name": "S106",
+        "yaw": -33.9283107494158,
+        "pitch": 0,
+        "xPercent": 62.1525,
+        "yPercent": 29.5895,
+        "isElevator": false
+      },
+      {
+        "id": "1781157879820_dest",
+        "name": "S105",
+        "yaw": 12.15553296863493,
+        "pitch": 0,
+        "xPercent": 65.6338,
+        "yPercent": 29.5895,
+        "isElevator": false
+      },
+      {
+        "id": "1781157939990_dest",
+        "name": "S102",
+        "yaw": 127.61452807986865,
+        "pitch": 0,
+        "xPercent": 64.8456,
+        "yPercent": 36.362,
+        "isElevator": false
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1781157460267",
+    "name": "s1009",
+    "url": "./images/S/1F/s1009.jpg",
+    "xPercent": 71.1515,
+    "yPercent": 32.6343,
+    "links": [
+      {
+        "id": "1783473338374_1781157593727",
+        "targetId": "1781157593727",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 88.68813036292056,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 103.31712270064702,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783473546850_1781157453717",
+        "targetId": "1781157453717",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -91.32446878229456,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -103.3849158335646,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1781157593727",
+    "name": "s1010",
+    "url": "./images/S/1F/s1010.jpg",
+    "xPercent": 78.9024,
+    "yPercent": 32.6343,
+    "links": [
+      {
+        "id": "1783473364254_1781157599725",
+        "targetId": "1781157599725",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 103.39809127530157,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 114.10213742765802,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783473528180_1781157460267",
+        "targetId": "1781157460267",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -76.04692092601402,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -91.32446878229456,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1786413377778_1783428317560",
+        "targetId": "1783428317560",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 174.5211869178902,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -52.564657538282745,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "id": "1781157903600_dest",
+        "name": "S105",
+        "yaw": -17.701419589373018,
+        "pitch": 0,
+        "xPercent": 77.7752,
+        "yPercent": 29.5795,
+        "isElevator": false
+      },
+      {
+        "id": "1781157917446_dest",
+        "name": "S102",
+        "yaw": -139.11423186412105,
+        "pitch": 0,
+        "xPercent": 77.4573,
+        "yPercent": 36.4787,
+        "isElevator": false
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1781157599725",
+    "name": "s1011",
+    "url": "./images/S/1F/s1011.jpg",
+    "xPercent": 85.7338,
+    "yPercent": 32.751,
+    "links": [
+      {
+        "id": "1783473388263_1781157609065",
+        "targetId": "1781157609065",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 120.57514845133505,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -177.87735536379705,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783473511321_1781157593727",
+        "targetId": "1781157593727",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -79.61729970109735,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -76.04692092601402,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1781157609065",
+    "name": "s1012",
+    "url": "./images/S/1F/s1012.jpg",
+    "xPercent": 89.4779,
+    "yPercent": 32.9844,
+    "links": [
+      {
+        "id": "1783473491308_1781157599725",
+        "targetId": "1781157599725",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -82.16597733158079,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -79.61729970109735,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1783428317560",
+    "name": "s1013",
+    "url": "./images/S/1F/s1013.jpg",
+    "xPercent": 79.8614,
+    "yPercent": 47.1519,
+    "links": [
+      {
+        "id": "1785864554149_1781157593727",
+        "targetId": "1781157593727",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 120.92976200543444,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 15.571841539678985,
+        "entryPitch": 0,
+        "arrowPitch": -26.398619909048847,
+        "floorChange": null
+      },
+      {
+        "id": "1786412482081_1783428269463",
+        "targetId": "1783428269463",
+        "targetScopeKey": "mcu_nav_nodes_s_2",
+        "yaw": -124.39664128202025,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 90.55846737765927,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1783476431940",
+    "name": "s1014",
+    "url": "./images/S/1F/s1014.jpg",
+    "xPercent": 53.876,
+    "yPercent": 41.2702,
+    "links": [
+      {
+        "id": "1783477046569_1783476488765",
+        "targetId": "1783476488765",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 96.25426277851955,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 105.72226571457645,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1785587797563_1781157448009",
+        "targetId": "1781157448009",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -89.23305841745992,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 13.619339200345394,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1783476488765",
+    "name": "s1015",
+    "url": "./images/S/1F/s1015.jpg",
+    "xPercent": 54.927,
+    "yPercent": 50.0228,
+    "links": [
+      {
+        "id": "1783477064189_1783476493714",
+        "targetId": "1783476493714",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 105.72226571457645,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 97.7182766936819,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783477306376_1783476431940",
+        "targetId": "1783476431940",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -76.82430570280508,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -93.77622620728482,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1783476493714",
+    "name": "s1016",
+    "url": "./images/S/1F/s1016.jpg",
+    "xPercent": 56.2407,
+    "yPercent": 59.1255,
+    "links": [
+      {
+        "id": "1783477076995_1783476503158",
+        "targetId": "1783476503158",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 97.7182766936819,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 57.41769775349326,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783477290685_1783476488765",
+        "targetId": "1783476488765",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -80.0192615687314,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -76.82430570280508,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1783476503158",
+    "name": "s1017",
+    "url": "./images/S/1F/s1017.jpg",
+    "xPercent": 56.5034,
+    "yPercent": 66.9444,
+    "links": [
+      {
+        "id": "1783477092127_1783476509950",
+        "targetId": "1783476509950",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 57.41769775349326,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 53.128959422532034,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783477265421_1783476493714",
+        "targetId": "1783476493714",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -116.66224694191544,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -79.20520234680811,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1783476509950",
+    "name": "s1018",
+    "url": "./images/S/1F/s1018.jpg",
+    "xPercent": 56.0436,
+    "yPercent": 74.1799,
+    "links": [
+      {
+        "id": "1783477105273_1783476518061",
+        "targetId": "1783476518061",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 51.75575078188683,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 42.20674701108294,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783477250445_1783476503158",
+        "targetId": "1783476503158",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -116.66224694191544,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -116.66224694191544,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1783476518061",
+    "name": "s1019",
+    "url": "./images/S/1F/s1019.jpg",
+    "xPercent": 55.978,
+    "yPercent": 81.8822,
+    "links": [
+      {
+        "id": "1783477123122_1783476524535",
+        "targetId": "1783476524535",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": 42.20674701108294,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 20.308621096639172,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783477238171_1783476509950",
+        "targetId": "1783476509950",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -113.26840560639465,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -116.66224694191544,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1783476524535",
+    "name": "s1020",
+    "url": "./images/S/1F/s1020.jpg",
+    "xPercent": 56.1093,
+    "yPercent": 90.2846,
+    "links": [
+      {
+        "id": "1783477221651_1783476518061",
+        "targetId": "1783476518061",
+        "targetScopeKey": "mcu_nav_nodes_s_1",
+        "yaw": -110.93317251540486,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -112.21651942324519,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1783488101098_1783482238559",
+        "targetId": "1783482238559",
+        "targetScopeKey": "mcu_nav_nodes_campus",
+        "yaw": -5.717921022063592,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -71.99302050633247,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  }
+]

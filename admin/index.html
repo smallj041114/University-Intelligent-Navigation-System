@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>管理後台｜銘傳大學桃園校區導航</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="admin-home-page">
+    <main class="admin-home-shell">
+      <header class="admin-home-header">
+        <p class="admin-login-kicker">已登入</p>
+        <h1 class="admin-login-title">管理後台</h1>
+        <p class="admin-login-desc">一般使用者請走前台導覽。這裡只給維護用地圖與資料。</p>
+      </header>
+      <section class="admin-home-actions">
+        <a class="primary-btn admin-home-link" href="../navigation.html">
+          <span class="admin-home-link-title">地圖編輯</span>
+          <span class="admin-home-link-hint">節點、連線、平面圖熱點</span>
+        </a>
+        <a class="secondary-btn admin-home-link" href="./links.html">
+          <span class="admin-home-link-title">連結／QR</span>
+          <span class="admin-home-link-hint">訪客入口、路徑分享、各據點環景</span>
+        </a>
+        <a class="secondary-btn admin-home-link" href="./notices.html">
+          <span class="admin-home-link-title">公告</span>
+          <span class="admin-home-link-hint">預設訊息與依網址規則</span>
+        </a>
+        <a class="secondary-btn admin-home-link" href="../settings.html">
+          <span class="admin-home-link-title">設定</span>
+          <span class="admin-home-link-hint">大樓、訪客起點、環景外觀、資料檢查</span>
+        </a>
+        <a class="secondary-btn admin-home-link" href="./audit.html">
+          <span class="admin-home-link-title">監控／修改紀錄</span>
+          <span class="admin-home-link-hint">線上訪客、今日進站、管理員操作稽核</span>
+        </a>
+        <button id="adminLogoutBtn" type="button" class="secondary-btn">登出</button>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/admin-home.js"></script>
+  </body>
+</html>

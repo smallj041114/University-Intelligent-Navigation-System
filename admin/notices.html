@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>公告｜管理後台</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="admin-links-page">
+    <main class="admin-links-shell">
+      <header class="admin-home-header">
+        <p class="admin-login-kicker">管理後台</p>
+        <h1 class="admin-login-title">公告</h1>
+        <p id="noticesPageDesc" class="admin-login-desc">
+          預設訊息在訪客網址<strong>沒命中規則</strong>時使用；規則依 path＋查詢字串關鍵字（例如
+          <code>to=S109</code>）由上而下第一筆命中。
+        </p>
+      </header>
+
+      <section id="welcomeDefaultSection" class="admin-links-section panel-section admin-only-defaults">
+        <h2 class="admin-links-heading">首次進入 — 預設</h2>
+        <label class="admin-links-check">
+          <input id="noticeEnabled" type="checkbox" />
+          啟用預設首次公告
+        </label>
+        <label class="admin-links-check">
+          <input id="noticeShowEveryVisit" type="checkbox" />
+          強制每次進入導航頁都跳出（忽略「已看過」）
+        </label>
+        <label class="modal-label" for="noticeTitle">標題</label>
+        <input id="noticeTitle" class="modal-input" type="text" maxlength="80" placeholder="例如：歡迎使用校園導航" />
+        <label class="modal-label" for="noticeBody">內文</label>
+        <textarea
+          id="noticeBody"
+          class="modal-input admin-notice-body"
+          rows="4"
+          maxlength="2000"
+          placeholder="簡短說明如何開始導航…"
+        ></textarea>
+        <label class="modal-label" for="noticeCountdown">倒數秒數</label>
+        <input id="noticeCountdown" class="modal-input" type="number" min="1" max="60" step="1" value="8" />
+        <p class="admin-links-hint">版本：<span id="noticeVersion">1</span></p>
+        <div class="admin-links-row">
+          <button id="noticeSaveBtn" type="button" class="primary-btn">儲存首次預設</button>
+          <button id="noticePreviewBtn" type="button" class="secondary-btn">預覽</button>
+        </div>
+      </section>
+
+      <section class="admin-links-section panel-section">
+        <h2 class="admin-links-heading">首次進入 — 依網址規則</h2>
+        <div id="welcomeRulesList" class="admin-url-rules-list"></div>
+        <p class="admin-links-hint">新增／編輯規則</p>
+        <input id="welcomeRuleId" type="hidden" value="" />
+        <label class="admin-links-check">
+          <input id="welcomeRuleEnabled" type="checkbox" checked />
+          啟用此規則
+        </label>
+        <label class="modal-label" for="welcomeRuleLabel">名稱</label>
+        <input id="welcomeRuleLabel" class="modal-input" type="text" maxlength="80" placeholder="例如：通往 S109" />
+        <label class="modal-label" for="welcomeRuleMatch">網址關鍵字（包含即命中）</label>
+        <input id="welcomeRuleMatch" class="modal-input" type="text" maxlength="300" placeholder="例如 to=S109" />
+        <label class="modal-label" for="welcomeRuleTitle">標題</label>
+        <input id="welcomeRuleTitle" class="modal-input" type="text" maxlength="80" />
+        <label class="modal-label" for="welcomeRuleBody">內文</label>
+        <textarea id="welcomeRuleBody" class="modal-input admin-notice-body" rows="3" maxlength="2000"></textarea>
+        <label class="modal-label" for="welcomeRuleCountdown">倒數秒數</label>
+        <input id="welcomeRuleCountdown" class="modal-input" type="number" min="1" max="60" value="8" />
+        <label class="admin-links-check">
+          <input id="welcomeRuleEvery" type="checkbox" />
+          每次進入都顯示
+        </label>
+        <div class="admin-links-row">
+          <button id="welcomeRuleSaveBtn" type="button" class="primary-btn">套用此規則</button>
+          <button id="welcomeRuleClearBtn" type="button" class="secondary-btn">清空表單</button>
+        </div>
+      </section>
+
+      <section id="endDefaultSection" class="admin-links-section panel-section admin-only-defaults">
+        <h2 class="admin-links-heading">結束回饋 — 預設</h2>
+        <p class="admin-links-hint">路徑播完抵達終點、且無規則命中時使用。未啟用不彈窗。</p>
+        <label class="admin-links-check">
+          <input id="endEnabled" type="checkbox" />
+          啟用預設結束回饋
+        </label>
+        <label class="admin-links-check">
+          <input id="endEvery" type="checkbox" />
+          每次抵達都顯示
+        </label>
+        <label class="modal-label" for="endTitle">標題</label>
+        <input id="endTitle" class="modal-input" type="text" maxlength="80" />
+        <label class="modal-label" for="endBody">內文</label>
+        <textarea id="endBody" class="modal-input admin-notice-body" rows="3" maxlength="2000"></textarea>
+        <label class="modal-label" for="endFormUrl">Google 表單網址（https，選填）</label>
+        <input id="endFormUrl" class="modal-input" type="url" maxlength="500" placeholder="https://docs.google.com/forms/..." />
+        <label class="modal-label" for="endFormLabel">表單按鈕文字</label>
+        <input id="endFormLabel" class="modal-input" type="text" maxlength="40" value="填寫回饋" />
+        <label class="modal-label" for="endCountdown">倒數秒數</label>
+        <input id="endCountdown" class="modal-input" type="number" min="1" max="60" value="12" />
+        <p class="admin-links-hint">版本：<span id="endVersion">1</span></p>
+        <div class="admin-links-row">
+          <button id="endSaveBtn" type="button" class="primary-btn">儲存結束預設</button>
+          <button id="endPreviewBtn" type="button" class="secondary-btn">預覽</button>
+        </div>
+      </section>
+
+      <section class="admin-links-section panel-section">
+        <h2 class="admin-links-heading">結束回饋 — 依網址規則</h2>
+        <div id="endRulesList" class="admin-url-rules-list"></div>
+        <p class="admin-links-hint">新增／編輯規則</p>
+        <input id="endRuleId" type="hidden" value="" />
+        <label class="admin-links-check">
+          <input id="endRuleEnabled" type="checkbox" checked />
+          啟用此規則
+        </label>
+        <label class="modal-label" for="endRuleLabel">名稱</label>
+        <input id="endRuleLabel" class="modal-input" type="text" maxlength="80" />
+        <label class="modal-label" for="endRuleMatch">網址關鍵字</label>
+        <input id="endRuleMatch" class="modal-input" type="text" maxlength="300" placeholder="例如 to=S109" />
+        <label class="modal-label" for="endRuleTitle">標題</label>
+        <input id="endRuleTitle" class="modal-input" type="text" maxlength="80" />
+        <label class="modal-label" for="endRuleBody">內文</label>
+        <textarea id="endRuleBody" class="modal-input admin-notice-body" rows="3" maxlength="2000"></textarea>
+        <label class="modal-label" for="endRuleFormUrl">表單網址（選填）</label>
+        <input id="endRuleFormUrl" class="modal-input" type="url" maxlength="500" />
+        <label class="modal-label" for="endRuleFormLabel">表單按鈕文字</label>
+        <input id="endRuleFormLabel" class="modal-input" type="text" maxlength="40" value="填寫回饋" />
+        <label class="modal-label" for="endRuleCountdown">倒數秒數</label>
+        <input id="endRuleCountdown" class="modal-input" type="number" min="1" max="60" value="12" />
+        <label class="admin-links-check">
+          <input id="endRuleEvery" type="checkbox" />
+          每次抵達都顯示
+        </label>
+        <div class="admin-links-row">
+          <button id="endRuleSaveBtn" type="button" class="primary-btn">套用此規則</button>
+          <button id="endRuleClearBtn" type="button" class="secondary-btn">清空表單</button>
+        </div>
+      </section>
+
+      <div class="admin-links-row">
+        <button id="rulesSaveAllBtn" type="button" class="primary-btn">儲存全部規則到伺服器</button>
+      </div>
+      <p id="noticeStatus" class="admin-links-status" aria-live="polite"></p>
+
+      <nav class="admin-page-footer" aria-label="頁面導覽">
+        <a id="adminFooterLinksLink" class="admin-page-footer-link" href="./links.html">連結／QR</a>
+        <a class="admin-page-footer-link" href="../navigation.html">導覽</a>
+        <button id="adminLogoutBtn" type="button" class="admin-page-footer-link admin-page-footer-btn">登出</button>
+        <a id="adminHomeBackLink" class="admin-page-footer-link" href="./index.html">管理後台</a>
+      </nav>
+    </main>
+
+    <div id="noticePreviewModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="noticePreviewTitle">
+      <div class="modal-card welcome-notice-card">
+        <h3 id="noticePreviewTitle">預覽標題</h3>
+        <p id="noticePreviewBody" class="modal-desc welcome-notice-body">預覽內文</p>
+        <p id="noticePreviewFormWrap" class="admin-links-hint hidden">
+          表單按鈕：<span id="noticePreviewFormLabel">填寫回饋</span>
+        </p>
+        <p class="welcome-notice-countdown" aria-live="polite">
+          <span id="noticePreviewCountdown">8</span> 秒後自動關閉（預覽不會寫入已看過）
+        </p>
+        <div class="modal-actions">
+          <button id="noticePreviewCloseBtn" type="button" class="primary-btn">關閉預覽</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/pages/admin-notices.js"></script>
+  </body>
+</html>

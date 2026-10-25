@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>管理登入｜銘傳大學桃園校區導航</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="admin-login-page">
+    <main class="admin-login-card">
+      <p class="admin-login-kicker">管理頁面</p>
+      <h1 class="admin-login-title">請登入</h1>
+      <p class="admin-login-desc">完整管理員可編輯地圖與設定；二級帳號依權限管理連結／QR、據點或公告。</p>
+      <form id="adminLoginForm" class="admin-login-form">
+        <label class="modal-label" for="adminUsername">帳號</label>
+        <input
+          id="adminUsername"
+          class="modal-input"
+          type="text"
+          name="username"
+          autocomplete="username"
+          required
+          spellcheck="false"
+        />
+        <label class="modal-label" for="adminPassword">密碼</label>
+        <input
+          id="adminPassword"
+          class="modal-input"
+          type="password"
+          name="password"
+          autocomplete="current-password"
+          required
+        />
+        <p id="adminLoginError" class="admin-login-error" role="alert"></p>
+        <button type="submit" class="primary-btn admin-login-submit">登入</button>
+      </form>
+      <a class="admin-login-back" href="../navigation.html">← 返回導覽</a>
+    </main>
+    <script type="module" src="/src/pages/admin-login.js"></script>
+  </body>
+</html>

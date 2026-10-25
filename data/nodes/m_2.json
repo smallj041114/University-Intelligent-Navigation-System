@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "1789980906932",
+    "name": "m2001",
+    "url": "./images/M/2F/m2001.jpg",
+    "xPercent": 64.2112,
+    "yPercent": 74.1107,
+    "links": [
+      {
+        "id": "1790108297942_1789981473903",
+        "targetId": "1789981473903",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -0.1006938995208202,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 6.513186176395266,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790639584490_1790636006190",
+        "targetId": "1790636006190",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -157.43242563701028,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": -157.77882304677462,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M213",
+        "xPercent": 61.2328,
+        "yPercent": 74.1945,
+        "id": "dest_1789980906932_M213",
+        "isElevator": false,
+        "yaw": -92.28684019318507,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1789981473903",
+    "name": "m2002",
+    "url": "./images/M/2F/m2002.jpg",
+    "xPercent": 64.2544,
+    "yPercent": 66.8382,
+    "links": [
+      {
+        "id": "1790108314615_1789980906932",
+        "targetId": "1789980906932",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -173.37676969553183,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 178.08214837664548,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108331630_1789981475997",
+        "targetId": "1789981475997",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 6.657633945719681,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 10.622769032870565,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M211",
+        "xPercent": 66.9475,
+        "yPercent": 64.7364,
+        "id": "dest_1789981473903_M211",
+        "isElevator": false,
+        "yaw": 73.09518523950851,
+        "pitch": 0
+      },
+      {
+        "name": "M212",
+        "xPercent": 66.9475,
+        "yPercent": 69.0567,
+        "id": "dest_1789981473903_M212",
+        "isElevator": false,
+        "yaw": 117.43896949985299,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981475997",
+    "name": "m2003",
+    "url": "./images/M/2F/m2003.jpg",
+    "xPercent": 64.2544,
+    "yPercent": 58.1974,
+    "links": [
+      {
+        "id": "1790108360536_1789981473903",
+        "targetId": "1789981473903",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -167.84229908265434,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -173.53256736896992,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108376096_1789981478845",
+        "targetId": "1789981478845",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 10.619164456706358,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 13.385129519362636,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981478845",
+    "name": "m2004",
+    "url": "./images/M/2F/m2004.jpg",
+    "xPercent": 64.1887,
+    "yPercent": 48.389,
+    "links": [
+      {
+        "id": "1790108387426_1789981475997",
+        "targetId": "1789981475997",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -166.8024551285776,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -169.0193660646131,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108406361_1789981481999",
+        "targetId": "1789981481999",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 13.0867608296129,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -0.37473474449427613,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M209",
+        "xPercent": 66.8162,
+        "yPercent": 46.2872,
+        "id": "dest_1789981478845_M209",
+        "isElevator": false,
+        "yaw": 82.26714852353757,
+        "pitch": 0
+      },
+      {
+        "name": "M211",
+        "xPercent": 66.8819,
+        "yPercent": 50.4908,
+        "id": "dest_1789981478845_M211",
+        "isElevator": false,
+        "yaw": 126.00434643855579,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981481999",
+    "name": "m2005",
+    "url": "./images/M/2F/m2005.jpg",
+    "xPercent": 64.123,
+    "yPercent": 39.9818,
+    "links": [
+      {
+        "id": "1790108416650_1789981478845",
+        "targetId": "1789981478845",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -177.87518178378593,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -165.8932065580292,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108434083_1789981485530",
+        "targetId": "1789981485530",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 0.44867571625627534,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 4.144338559484936,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981485530",
+    "name": "m2006",
+    "url": "./images/M/2F/m2006.jpg",
+    "xPercent": 64.123,
+    "yPercent": 32.9757,
+    "links": [
+      {
+        "id": "1790108448235_1789981481999",
+        "targetId": "1789981481999",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -178.07931024038157,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -179.8846823771986,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108473844_1789981488789",
+        "targetId": "1789981488789",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -83.87138754461643,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -52.00376261532847,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791219214234_1791194984723",
+        "targetId": "1791194984723",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 8.602633656045896,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": 75.1413884456872,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M209",
+        "xPercent": 67.0132,
+        "yPercent": 33.0925,
+        "id": "dest_1789981485530_M209",
+        "isElevator": false,
+        "yaw": 83.88287548330061,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1789981488789",
+    "name": "m2007",
+    "url": "./images/M/2F/m2007.jpg",
+    "xPercent": 61.2985,
+    "yPercent": 32.9757,
+    "links": [
+      {
+        "id": "1790108487743_1789981485530",
+        "targetId": "1789981485530",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 127.50628878064754,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 95.37767390696467,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108502927_1789981493051",
+        "targetId": "1789981493051",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -52.15725569426121,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -2.6893722893812537,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M208",
+        "xPercent": 60.9044,
+        "yPercent": 29.5895,
+        "id": "dest_1789981488789_M208",
+        "isElevator": false,
+        "yaw": 55.74760152697752,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981493051",
+    "name": "m2008",
+    "url": "./images/M/2F/m2008.jpg",
+    "xPercent": 57.5544,
+    "yPercent": 32.859,
+    "links": [
+      {
+        "id": "1790108515938_1789981488789",
+        "targetId": "1789981488789",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 176.7001277126751,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 127.79462528103511,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108529227_1789981496292",
+        "targetId": "1789981496292",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -2.6223494896935335,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 10.536640803800992,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981496292",
+    "name": "m2009",
+    "url": "./images/M/2F/m2009.jpg",
+    "xPercent": 53.1534,
+    "yPercent": 32.859,
+    "links": [
+      {
+        "id": "1790108540975_1789981493051",
+        "targetId": "1789981493051",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -171.39612907680788,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 176.68832229738769,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791384995386_1791195019354",
+        "targetId": "1791195019354",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 8.37782895508542,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -76.59560040914994,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M206",
+        "xPercent": 50.7887,
+        "yPercent": 29.5895,
+        "id": "dest_1789981496292_M206",
+        "isElevator": false,
+        "yaw": 75.43840945463455,
+        "pitch": 0
+      },
+      {
+        "name": "M207",
+        "xPercent": 54.4015,
+        "yPercent": 29.5895,
+        "id": "dest_1789981496292_M207",
+        "isElevator": false,
+        "yaw": 122.80825465966257,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981500072",
+    "name": "m2010",
+    "url": "./images/M/2F/m2010.jpg",
+    "xPercent": 49.539,
+    "yPercent": 32.833,
+    "links": [
+      {
+        "id": "1791385034270_1791195019354",
+        "targetId": "1791195019354",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -170.89795550615202,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": 104.23168689051761,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385047821_1791195015497",
+        "targetId": "1791195015497",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 8.86890148845987,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -95.7417592228714,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385379587_1791195142933",
+        "targetId": "1791195142933",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": -81.92189532944417,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -175.5325218743758,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1789981504007",
+    "name": "m2011",
+    "url": "./images/M/2F/m2011.jpg",
+    "xPercent": 45.4025,
+    "yPercent": 32.859,
+    "links": [
+      {
+        "id": "1791385092571_1791195015497",
+        "targetId": "1791195015497",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -176.22336547491727,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": 83.61379217781001,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385110511_1789981508574",
+        "targetId": "1789981508574",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 3.5290434940461637,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -6.76111300261482,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M205-1",
+        "xPercent": 44.3515,
+        "yPercent": 35.8949,
+        "id": "dest_1789981504007_M205-1",
+        "isElevator": false,
+        "yaw": -27.068256859678854,
+        "pitch": 0
+      },
+      {
+        "name": "M205",
+        "xPercent": 44.9427,
+        "yPercent": 29.4727,
+        "id": "dest_1789981504007_M205",
+        "isElevator": false,
+        "yaw": 67.52849061123754,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981508574",
+    "name": "m2012",
+    "url": "./images/M/2F/m2012.jpg",
+    "xPercent": 39.7535,
+    "yPercent": 32.7422,
+    "links": [
+      {
+        "id": "1790108644824_1789981511617",
+        "targetId": "1789981511617",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -5.604737110011911,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 17.476322372887125,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385121941_1789981504007",
+        "targetId": "1789981504007",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 173.58179971781738,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -175.90379017038413,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981511617",
+    "name": "m2013",
+    "url": "./images/M/2F/m2013.jpg",
+    "xPercent": 35.0898,
+    "yPercent": 32.7422,
+    "links": [
+      {
+        "id": "1790108656880_1789981508574",
+        "targetId": "1789981508574",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -162.74239069599844,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 175.08762145413448,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108686676_1789981515291",
+        "targetId": "1789981515291",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -72.52403497845029,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 23.630881177803303,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791217729676_1791194966576",
+        "targetId": "1791194966576",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 106.7744347184705,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -156.2456093536946,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M204-1",
+        "xPercent": 32.1996,
+        "yPercent": 32.3919,
+        "id": "dest_1789981511617_M204-1",
+        "isElevator": false,
+        "yaw": 32.08706107610419,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1789981515291",
+    "name": "m2014",
+    "url": "./images/M/2F/m2014.jpg",
+    "xPercent": 35.0231,
+    "yPercent": 39.3553,
+    "links": [
+      {
+        "id": "1790108710983_1789981511617",
+        "targetId": "1789981511617",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -158.27740000212634,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 104.78864687239616,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108725409_1789981519392",
+        "targetId": "1789981519392",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 23.345897815547573,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 13.643546764879488,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981519392",
+    "name": "m2015",
+    "url": "./images/M/2F/m2015.jpg",
+    "xPercent": 35.068,
+    "yPercent": 48.7662,
+    "links": [
+      {
+        "id": "1790108740014_1789981515291",
+        "targetId": "1789981515291",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -167.06505485295065,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -157.7980982845545,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108754725_1789981524079",
+        "targetId": "1789981524079",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 13.435584545956033,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -8.791077560040435,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M203-1",
+        "xPercent": 32.6594,
+        "yPercent": 50.7243,
+        "id": "dest_1789981519392_M203-1",
+        "isElevator": false,
+        "yaw": 81.9815902170451,
+        "pitch": 0
+      },
+      {
+        "name": "M204",
+        "xPercent": 32.9878,
+        "yPercent": 46.9878,
+        "id": "dest_1789981519392_M204",
+        "isElevator": false,
+        "yaw": 121.61418242969285,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981524079",
+    "name": "m2016",
+    "url": "./images/M/2F/m2016.jpg",
+    "xPercent": 35.1263,
+    "yPercent": 56.2466,
+    "links": [
+      {
+        "id": "1790108768846_1789981519392",
+        "targetId": "1789981519392",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 171.28164331771933,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -167.57940274640498,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790108786726_1789981527434",
+        "targetId": "1789981527434",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -8.519370597054149,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -12.483800712820425,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1789981527434",
+    "name": "m2017",
+    "url": "./images/M/2F/m2017.jpg",
+    "xPercent": 35.1341,
+    "yPercent": 66.8955,
+    "links": [
+      {
+        "id": "1790108796569_1789981524079",
+        "targetId": "1789981524079",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 168.26789761917723,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 171.17642582503083,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1790639538262_1790635955563",
+        "targetId": "1790635955563",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -19.264222156105006,
+        "pitch": 0,
+        "distance": 4,
+        "entryYaw": -33.16190776814483,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M202",
+        "xPercent": 33.0535,
+        "yPercent": 69.2903,
+        "id": "dest_1789981527434_M202",
+        "isElevator": false,
+        "yaw": 55.87929469428218,
+        "pitch": 0
+      },
+      {
+        "name": "M203",
+        "xPercent": 32.9221,
+        "yPercent": 64.6196,
+        "id": "dest_1789981527434_M203",
+        "isElevator": false,
+        "yaw": 100.19295456317957,
+        "pitch": 0
+      },
+      {
+        "name": "M201",
+        "xPercent": 37.9799,
+        "yPercent": 73.8442,
+        "id": "dest_1789981527434_M201",
+        "isElevator": false,
+        "yaw": -32.63622514654969,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": false
+  },
+  {
+    "id": "1790635952085",
+    "name": "m2018",
+    "url": "./images/M/2F/m2018.jpg",
+    "xPercent": 35.5816,
+    "yPercent": 84.2671,
+    "links": [
+      {
+        "id": "1790638358634_1790635918265",
+        "targetId": "1790635918265",
+        "targetScopeKey": "mcu_nav_nodes_m_1",
+        "yaw": -144.4682648847547,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -171.16941078734305,
+        "entryPitch": 0,
+        "arrowPitch": -47.673349091242336,
+        "floorChange": "down"
+      },
+      {
+        "id": "1790638380118_1790635955563",
+        "targetId": "1790635955563",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 171.50297060138456,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 140.58109273835362,
+        "entryPitch": 0,
+        "arrowPitch": -13.205736904933147,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1790635955563",
+    "name": "m2019",
+    "url": "./images/M/2F/m2019.jpg",
+    "xPercent": 35.5816,
+    "yPercent": 77.7418,
+    "links": [
+      {
+        "id": "1790638393627_1790635952085",
+        "targetId": "1790635952085",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -8.718619696080282,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 1.8138472837327981,
+        "entryPitch": 0,
+        "arrowPitch": -45.41119809746337,
+        "floorChange": "down"
+      },
+      {
+        "id": "1790638425164_1790636170306",
+        "targetId": "1790636170306",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": -44.33417395811003,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 89.65354679178984,
+        "entryPitch": 0,
+        "arrowPitch": -8.95345937835497,
+        "floorChange": "up"
+      },
+      {
+        "id": "1790639527440_1789981527434",
+        "targetId": "1789981527434",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 161.7526445941878,
+        "pitch": 0,
+        "distance": 4,
+        "entryYaw": 168.40289806761461,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1790636002310",
+    "name": "m2020",
+    "url": "./images/M/2F/m2020.jpg",
+    "xPercent": 63.887,
+    "yPercent": 84.5571,
+    "links": [
+      {
+        "id": "1790638734622_1790635922782",
+        "targetId": "1790635922782",
+        "targetScopeKey": "mcu_nav_nodes_m_1",
+        "yaw": 2.3161433013560213,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 167.68790796381256,
+        "entryPitch": 0,
+        "arrowPitch": -54.27340622803982,
+        "floorChange": "down"
+      },
+      {
+        "id": "1790638751561_1790636006190",
+        "targetId": "1790636006190",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 33.23414871269944,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 18.33653678116434,
+        "entryPitch": 0,
+        "arrowPitch": -12.790091556209735,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1790636006190",
+    "name": "m2021",
+    "url": "./images/M/2F/m2021.jpg",
+    "xPercent": 63.887,
+    "yPercent": 77.7418,
+    "links": [
+      {
+        "id": "1790638760612_1790636002310",
+        "targetId": "1790636002310",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -174.55514480496518,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -172.3174069692309,
+        "entryPitch": 0,
+        "arrowPitch": -55.29607260150006,
+        "floorChange": "down"
+      },
+      {
+        "id": "1790638781562_1790636178204",
+        "targetId": "1790636178204",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": -132.57980982309977,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 179.41727901522552,
+        "entryPitch": 0,
+        "arrowPitch": -12.869014879566027,
+        "floorChange": "up"
+      },
+      {
+        "id": "1790639572342_1789980906932",
+        "targetId": "1789980906932",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 1.545283135050454,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": -23.645343525060525,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791194966576",
+    "name": "m2022",
+    "url": "./images/M/2F/m2022.jpg",
+    "xPercent": 35.0241,
+    "yPercent": 28.3051,
+    "links": [
+      {
+        "id": "1791215716487_1791194829182",
+        "targetId": "1791194829182",
+        "targetScopeKey": "mcu_nav_nodes_m_1",
+        "yaw": 114.40017170337478,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -95.0781231244789,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791215801912_1791194971120",
+        "targetId": "1791194971120",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 164.70505933639754,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 48.566895459735406,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791217742908_1789981511617",
+        "targetId": "1789981511617",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 26.27359220173173,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -74.36426251539064,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M棟2F電梯(左)",
+        "xPercent": 31.8711,
+        "yPercent": 24.802,
+        "id": "dest_1791194966576_M棟2F電梯(左)",
+        "isElevator": true,
+        "yaw": 144.54794452279077,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791194971120",
+    "name": "m2023",
+    "url": "./images/M/2F/m2023.jpg",
+    "xPercent": 32.9878,
+    "yPercent": 21.7661,
+    "links": [
+      {
+        "id": "1791215812112_1791194966576",
+        "targetId": "1791194966576",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -119.9113894846488,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -14.744329098215644,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791215827268_1791194975502",
+        "targetId": "1791194975502",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 6.573605198872883,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 21.934598033057796,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791194975502",
+    "name": "m2024",
+    "url": "./images/M/2F/m2024.jpg",
+    "xPercent": 29.0466,
+    "yPercent": 21.7661,
+    "links": [
+      {
+        "id": "1791215838814_1791194971120",
+        "targetId": "1791194971120",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -157.1627624641028,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -175.8858291941109,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791215854805_1791194980727",
+        "targetId": "1791194980727",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -68.56771770220024,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -2.2229091881272325,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791194980727",
+    "name": "m2025",
+    "url": "./images/M/2F/m2025.jpg",
+    "xPercent": 29.1123,
+    "yPercent": 28.6554,
+    "links": [
+      {
+        "id": "1791215866857_1791194975502",
+        "targetId": "1791194975502",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 179.0460245131768,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 109.85295107745321,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791216922785_1791195077598",
+        "targetId": "1791195077598",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": -92.791395030844,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -153.54277303028005,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791194984723",
+    "name": "m2026",
+    "url": "./images/M/2F/m2026.jpg",
+    "xPercent": 64.0574,
+    "yPercent": 26.5535,
+    "links": [
+      {
+        "id": "1791218456941_1791194851919",
+        "targetId": "1791194851919",
+        "targetScopeKey": "mcu_nav_nodes_m_1",
+        "yaw": -174.69971543540862,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 126.05255811348411,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791218479611_1791194989292",
+        "targetId": "1791194989292",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 125.66549745227701,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": 127.68288203199938,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791219223023_1789981485530",
+        "targetId": "1789981485530",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -94.73580541148192,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": -176.56041024343995,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [
+      {
+        "name": "M棟2F電梯(右)",
+        "xPercent": 67.2103,
+        "yPercent": 25.0356,
+        "id": "dest_1791194984723_M棟2F電梯(右)",
+        "isElevator": true,
+        "yaw": 159.82790362547433,
+        "pitch": 0
+      }
+    ],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791194989292",
+    "name": "m2027",
+    "url": "./images/M/2F/m2027.jpg",
+    "xPercent": 66.1593,
+    "yPercent": 22.4667,
+    "links": [
+      {
+        "id": "1791218487906_1791194984723",
+        "targetId": "1791194984723",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -31.573980555062917,
+        "pitch": 0,
+        "distance": 2,
+        "entryYaw": -48.563530190639824,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791218507427_1791194995262",
+        "targetId": "1791194995262",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 179.95714921216882,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 79.42552604805996,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791194995262",
+    "name": "m2028",
+    "url": "./images/M/2F/m2028.jpg",
+    "xPercent": 70.1662,
+    "yPercent": 22.2332,
+    "links": [
+      {
+        "id": "1791218518847_1791194989292",
+        "targetId": "1791194989292",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -102.85815902383843,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": 1.217480063235712,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791218535094_1791194999632",
+        "targetId": "1791194999632",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 167.622932371582,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -179.0463611491524,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791194999632",
+    "name": "m2029",
+    "url": "./images/M/2F/m2029.jpg",
+    "xPercent": 70.1793,
+    "yPercent": 28.6554,
+    "links": [
+      {
+        "id": "1791218548727_1791194995262",
+        "targetId": "1791194995262",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 2.2175231521122782,
+        "pitch": 0,
+        "distance": 3,
+        "entryYaw": -11.52381297697707,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791218674926_1791195113169",
+        "targetId": "1791195113169",
+        "targetScopeKey": "mcu_nav_nodes_m_3",
+        "yaw": -89.43851883836999,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -17.59601244075452,
+        "entryPitch": 0,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195007280",
+    "name": "m2030",
+    "url": "./images/M/2F/m2030.jpg",
+    "xPercent": 49.5144,
+    "yPercent": 38.4171,
+    "links": [
+      {
+        "id": "1791384792290_1789670062764",
+        "targetId": "1789670062764",
+        "targetScopeKey": "mcu_nav_nodes_m_1",
+        "yaw": 18.430066545305493,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -87.54942355731708,
+        "entryPitch": 0,
+        "arrowPitch": -35.574915528120584,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791384833245_1791195015497",
+        "targetId": "1791195015497",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -25.213420446995343,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -7.669356779890904,
+        "entryPitch": 0,
+        "arrowPitch": -7.946248943595917,
+        "floorChange": "up"
+      },
+      {
+        "id": "1791384876700_1791195019354",
+        "targetId": "1791195019354",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 49.28814242999752,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": 13.106887790493829,
+        "entryPitch": 0,
+        "arrowPitch": -6.109760606767867,
+        "floorChange": "up"
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195015497",
+    "name": "m2031",
+    "url": "./images/M/2F/m2031.jpg",
+    "xPercent": 47.6051,
+    "yPercent": 32.833,
+    "links": [
+      {
+        "id": "1791384845834_1791195007280",
+        "targetId": "1791195007280",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 170.0247804619529,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -171.64959379683648,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791385057233_1789981500072",
+        "targetId": "1789981500072",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 84.02469789502129,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -171.09071704945245,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385083904_1789981504007",
+        "targetId": "1789981504007",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -96.21876691277868,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": 4.180799084776368,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  },
+  {
+    "id": "1791195019354",
+    "name": "m2032",
+    "url": "./images/M/2F/m2032.jpg",
+    "xPercent": 51.4269,
+    "yPercent": 32.833,
+    "links": [
+      {
+        "id": "1791384886200_1791195007280",
+        "targetId": "1791195007280",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -169.58462148061585,
+        "pitch": 0,
+        "distance": 5,
+        "entryYaw": -169.58462148061585,
+        "entryPitch": 0,
+        "floorChange": "down"
+      },
+      {
+        "id": "1791385006436_1789981496292",
+        "targetId": "1789981496292",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": 103.90999660439383,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": -171.66045661658666,
+        "entryPitch": 0,
+        "floorChange": null
+      },
+      {
+        "id": "1791385021716_1789981500072",
+        "targetId": "1789981500072",
+        "targetScopeKey": "mcu_nav_nodes_m_2",
+        "yaw": -76.47576643698301,
+        "pitch": 0,
+        "distance": 1,
+        "entryYaw": 9.407504333798897,
+        "entryPitch": 0,
+        "floorChange": null
+      }
+    ],
+    "destinations": [],
+    "autoFaceNext": true
+  }
+]

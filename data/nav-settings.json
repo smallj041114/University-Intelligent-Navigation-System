@@ -1,0 +1,291 @@
+{
+  "size": 108,
+  "opacity": 0.82,
+  "pitch": -29,
+  "tilt": 68,
+  "turnDurationSec": 0.8,
+  "floorChangeDurationSec": 0.4,
+  "centerPathNextArrow": true,
+  "playDelayMinSec": 0.2,
+  "playDelayMaxSec": 20,
+  "playDelayDefaultSec": 1,
+  "hudOpacity": 0.86,
+  "hudScale": 1,
+  "hudCorner": "custom",
+  "hudLeftPercent": 5.364907651715039,
+  "hudTopPercent": 1.4760147601476015,
+  "minimapScale": 1,
+  "minimapCorner": "top-right",
+  "minimapLeftPercent": 70,
+  "minimapTopPercent": 2,
+  "mapMetersPerPercent": 0.5,
+  "visitorSearchHidePathNodes": true,
+  "visitorStarts": [
+    {
+      "id": "gate",
+      "alias": "gate",
+      "label": "校門口",
+      "query": "校門口",
+      "image": "./images/campus/0001.jpg",
+      "enabled": true
+    },
+    {
+      "id": "s",
+      "alias": "s",
+      "label": "S棟",
+      "query": "s1017",
+      "image": "./images/S/1F/s1017.jpg",
+      "enabled": true
+    },
+    {
+      "id": "p",
+      "alias": "p",
+      "label": "P棟",
+      "query": "p1015",
+      "image": "./images/P/1F/p1015.jpg",
+      "enabled": true
+    },
+    {
+      "id": "start_1790672279068_4",
+      "alias": "m",
+      "label": "M棟",
+      "query": "m1035",
+      "image": "./images/M/1F/m1035.jpg",
+      "enabled": true
+    },
+    {
+      "id": "start_1788024436592_3",
+      "alias": "side-gate",
+      "label": "側門",
+      "query": "0082",
+      "image": "./images/campus/0082.jpg",
+      "enabled": true
+    }
+  ],
+  "visitorDefaultStartId": "gate",
+  "indoorEntry": {
+    "query": "校門口",
+    "image": "./images/campus/0001.jpg"
+  },
+  "campusBuildings": {
+    "s": {
+      "enabled": true,
+      "xPercent": 41.5631,
+      "yPercent": 14.5349,
+      "label": "",
+      "defaultXPercent": 45,
+      "defaultYPercent": 9
+    },
+    "aa": {
+      "enabled": false,
+      "xPercent": 54.9052,
+      "yPercent": 10.3488,
+      "label": "",
+      "defaultXPercent": 55,
+      "defaultYPercent": 9
+    },
+    "ee": {
+      "enabled": true,
+      "xPercent": 12.6553,
+      "yPercent": 55.3488,
+      "label": "",
+      "defaultXPercent": 13,
+      "defaultYPercent": 55
+    },
+    "p": {
+      "enabled": true,
+      "xPercent": 21.2884,
+      "yPercent": 52.7907,
+      "label": "",
+      "defaultXPercent": 21,
+      "defaultYPercent": 55
+    },
+    "m": {
+      "enabled": true,
+      "xPercent": 38.6775,
+      "yPercent": 78.4646,
+      "label": "",
+      "defaultXPercent": 21,
+      "defaultYPercent": 55
+    },
+    "cc": {
+      "enabled": true,
+      "xPercent": 28.6789,
+      "yPercent": 74.5349,
+      "label": "",
+      "defaultXPercent": 21,
+      "defaultYPercent": 55
+    },
+    "q": {
+      "enabled": false,
+      "xPercent": 33.9765,
+      "yPercent": 58.1395,
+      "label": "",
+      "defaultXPercent": 34.565075212557225,
+      "defaultYPercent": 54.18604651162791
+    }
+  },
+  "floorPlanPortals": {
+    "mcu_nav_nodes_p_1": {
+      "campus::1791391360557": {
+        "xPercent": 46.67,
+        "yPercent": 92.4
+      },
+      "mcu_nav_nodes_ee_1::1791651261308": {
+        "xPercent": 44.13,
+        "yPercent": 3.36
+      },
+      "mcu_nav_nodes_ee_1::1791651255060": {
+        "xPercent": 56.01,
+        "yPercent": 5.45
+      }
+    },
+    "mcu_nav_nodes_p_2": {
+      "mcu_nav_nodes_ee_1::1785657946314": {
+        "xPercent": 32.9,
+        "yPercent": 13.69
+      },
+      "mcu_nav_nodes_ee_1::1785658156062": {
+        "xPercent": 66.25,
+        "yPercent": 12.41
+      }
+    },
+    "mcu_nav_nodes_p_3": {
+      "mcu_nav_nodes_ee_2::1785659742032": {
+        "xPercent": 33.22,
+        "yPercent": 16.82
+      },
+      "mcu_nav_nodes_ee_2::1785659978397": {
+        "xPercent": 65.8,
+        "yPercent": 16.36
+      }
+    },
+    "mcu_nav_nodes_p_4": {
+      "mcu_nav_nodes_ee_3::1785660011959": {
+        "xPercent": 34.4,
+        "yPercent": 20.65
+      },
+      "mcu_nav_nodes_ee_3::1785660125372": {
+        "xPercent": 67.43,
+        "yPercent": 21.58
+      }
+    },
+    "mcu_nav_nodes_p_5": {
+      "mcu_nav_nodes_ee_4::1785660145264": {
+        "xPercent": 33.62,
+        "yPercent": 17.63
+      },
+      "mcu_nav_nodes_ee_4::1785660283524": {
+        "xPercent": 66.91,
+        "yPercent": 17.52
+      }
+    },
+    "mcu_nav_nodes_ee_1": {
+      "mcu_nav_nodes_p_1::1791651197332": {
+        "xPercent": 45.17,
+        "yPercent": 81.32
+      },
+      "mcu_nav_nodes_p_1::1791651204931": {
+        "xPercent": 52.42,
+        "yPercent": 78.77
+      },
+      "mcu_nav_nodes_p_2::1788135000017": {
+        "xPercent": 30.35,
+        "yPercent": 80.63
+      },
+      "mcu_nav_nodes_p_2::1788135000001": {
+        "xPercent": 69.06,
+        "yPercent": 80.51
+      }
+    },
+    "mcu_nav_nodes_ee_2": {
+      "mcu_nav_nodes_p_3::1788135000038": {
+        "xPercent": 26.76,
+        "yPercent": 84.34
+      },
+      "mcu_nav_nodes_p_3::1788135000021": {
+        "xPercent": 71.67,
+        "yPercent": 84.11
+      }
+    },
+    "mcu_nav_nodes_ee_3": {
+      "mcu_nav_nodes_p_4::1788135000055": {
+        "xPercent": 26.96,
+        "yPercent": 83.99
+      },
+      "mcu_nav_nodes_p_4::1788135000039": {
+        "xPercent": 71.48,
+        "yPercent": 83.76
+      }
+    },
+    "mcu_nav_nodes_ee_4": {
+      "mcu_nav_nodes_p_5::1788135000070": {
+        "xPercent": 26.96,
+        "yPercent": 83.87
+      },
+      "mcu_nav_nodes_p_5::1788135000056": {
+        "xPercent": 71.61,
+        "yPercent": 84.11
+      }
+    },
+    "mcu_nav_nodes_m_1": {
+      "campus::1791390497482": {
+        "xPercent": 49.22,
+        "yPercent": 97.22
+      }
+    },
+    "mcu_nav_nodes_s_1": {
+      "campus::1783476524535": {
+        "xPercent": 56.3,
+        "yPercent": 94.98
+      }
+    },
+    "mcu_nav_nodes_s_2": {
+      "campus::1791025109993": {
+        "xPercent": 29.99,
+        "yPercent": 96.62
+      }
+    },
+    "mcu_nav_nodes_cc_1": {
+      "campus::1792480318078": {
+        "xPercent": 56.98,
+        "yPercent": 98
+      }
+    }
+  },
+  "welcomeNotice": {
+    "enabled": true,
+    "title": "導航系統已更新（v0.2.0）",
+    "body": "本次更新重點：\n• 設計大樓(M)教室／地點已設定完成；EE／P 棟中庭亦已補齊，可搜尋導航\n• 大樓與入口可用中文搜尋（例如「資訊大樓」「觀光語文大樓入口」）\n• 大樓平面圖新增出口快捷：可一鍵回校園或跨棟\n• 跨樓層可選擇走樓梯，或樓梯＋電梯\n• 介面微調，導覽流程更順暢\n\n選好起點與目的地後即可開始；環景中左右拖曳可環視，點地面箭頭可前進。",
+    "countdownSec": 12,
+    "version": 5,
+    "showEveryVisit": false,
+    "rules": [
+      {
+        "id": "rule_1791106021253_s5mlv8",
+        "label": "CPE測試公告",
+        "urlMatch": "to=S302&mode=visitor&go=1&from=gate",
+        "enabled": false,
+        "title": "歡迎參加CPE",
+        "body": "請在10/6(二)抵達資訊大樓(S棟)三樓S302外等候考試開始",
+        "countdownSec": 8,
+        "version": 2,
+        "showEveryVisit": true
+      }
+    ]
+  },
+  "endFeedback": {
+    "defaultNotice": {
+      "enabled": true,
+      "title": "已抵達目的地",
+      "body": "若方便，歡迎填寫回饋表單協助我們改善導覽。",
+      "countdownSec": 8,
+      "version": 4,
+      "showEveryVisit": true,
+      "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLScqg-bArSbbI7e0vqo4J9BNERz5kg-mcSaMNL4cH4LwAZCtZQ/viewform?usp=dialog",
+      "formButtonLabel": "填寫回饋"
+    },
+    "rules": []
+  },
+  "panoSpotPresets": []
+}

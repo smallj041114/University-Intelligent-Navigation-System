@@ -1,0 +1,14 @@
+{
+  "apiKey": "YOUR_GOOGLE_MAPS_API_KEY",
+  "campus": {
+    "name": "銘傳大學桃園校區",
+    "gate": {
+      "name": "校門口",
+      "lat": 24.986297,
+      "lng": 121.343604
+    },
+    "arrivalRadiusMeters": 450,
+    "indoorEntryScopeKey": "mcu_nav_nodes_s_1",
+    "indoorEntryNodeName": "1001"
+  }
+}

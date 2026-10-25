@@ -1,0 +1,242 @@
+{
+  "s": {
+    "name": "資訊大樓(S)",
+    "floors": [
+      {
+        "id": "1",
+        "label": "1F",
+        "image": "./images/S/floorplan-s-1F.jpg"
+      },
+      {
+        "id": "2",
+        "label": "2F",
+        "image": "./images/S/floorplan-s-2F.jpg"
+      },
+      {
+        "id": "3",
+        "label": "3F",
+        "image": "./images/S/floorplan-s-3F.jpg"
+      },
+      {
+        "id": "4",
+        "label": "4F",
+        "image": "./images/S/floorplan-s-4F.jpg"
+      },
+      {
+        "id": "5",
+        "label": "5F",
+        "image": "./images/S/floorplan-s-5F.jpg"
+      },
+      {
+        "id": "6",
+        "label": "6F",
+        "image": "./images/S/floorplan-s-6F.jpg"
+      }
+    ]
+  },
+  "aa": {
+    "name": "科技大樓(AA)",
+    "floors": [
+      {
+        "id": "1",
+        "label": "1F",
+        "image": "./images/floorplan-aa-1F.jpg"
+      },
+      {
+        "id": "2",
+        "label": "2F",
+        "image": "./images/AA/floorplan-aa-2F.jpg"
+      },
+      {
+        "id": "3",
+        "label": "3F",
+        "image": "./images/AA/floorplan-aa-3F.jpg"
+      },
+      {
+        "id": "4",
+        "label": "4F",
+        "image": "./images/AA/floorplan-aa-4F.jpg"
+      },
+      {
+        "id": "5",
+        "label": "5F",
+        "image": "./images/AA/floorplan-aa-5F.jpg"
+      },
+      {
+        "id": "6",
+        "label": "6F",
+        "image": "./images/AA/floorplan-aa-6F.jpg"
+      },
+      {
+        "id": "7",
+        "label": "7F",
+        "image": "./images/AA/floorplan-aa-7F.jpg"
+      }
+    ]
+  },
+  "ee": {
+    "name": "綜合教學大樓(EE)",
+    "floors": [
+      {
+        "id": "1",
+        "label": "1F",
+        "image": "./images/EE/floorplan-ee-1F.jpg"
+      },
+      {
+        "id": "2",
+        "label": "2F",
+        "image": "./images/EE/floorplan-ee-2F.jpg"
+      },
+      {
+        "id": "3",
+        "label": "3F",
+        "image": "./images/EE/floorplan-ee-3F.jpg"
+      },
+      {
+        "id": "4",
+        "label": "4F",
+        "image": "./images/EE/floorplan-ee-4F.jpg"
+      },
+      {
+        "id": "5",
+        "label": "5F",
+        "image": "./images/EE/floorplan-ee-5F.jpg"
+      },
+      {
+        "id": "6",
+        "label": "6F",
+        "image": "./images/EE/floorplan-ee-6F.jpg"
+      },
+      {
+        "id": "7",
+        "label": "7F",
+        "image": "./images/EE/floorplan-ee-7F.jpg"
+      }
+    ]
+  },
+  "p": {
+    "name": "觀光語文大樓(P)",
+    "floors": [
+      {
+        "id": "1",
+        "label": "1F",
+        "image": "./images/P/floorplan-p-1F.jpg"
+      },
+      {
+        "id": "2",
+        "label": "2F",
+        "image": "./images/P/floorplan-p-2F.jpg"
+      },
+      {
+        "id": "3",
+        "label": "3F",
+        "image": "./images/P/floorplan-p-3F.jpg"
+      },
+      {
+        "id": "4",
+        "label": "4F",
+        "image": "./images/P/floorplan-p-4F.jpg"
+      },
+      {
+        "id": "5",
+        "label": "5F",
+        "image": "./images/P/floorplan-p-5F.jpg"
+      }
+    ]
+  },
+  "m": {
+    "name": "設計大樓(M)",
+    "floors": [
+      {
+        "id": "1",
+        "label": "1F",
+        "image": "./images/M/floorplan-m-1F.jpg"
+      },
+      {
+        "id": "2",
+        "label": "2F",
+        "image": "./images/M/floorplan-m-2F.jpg"
+      },
+      {
+        "id": "3",
+        "label": "3F",
+        "image": "./images/M/floorplan-m-3F.jpg"
+      },
+      {
+        "id": "4",
+        "label": "4F",
+        "image": "./images/M/floorplan-m-4F.jpg"
+      },
+      {
+        "id": "5",
+        "label": "5F",
+        "image": "./images/M/floorplan-m-5F.jpg"
+      }
+    ]
+  },
+  "cc": {
+    "name": "資訊網路大樓(CC)",
+    "floors": [
+      {
+        "id": "1",
+        "label": "1F",
+        "image": "./images/CC/floorplan-cc-1F.jpg"
+      },
+      {
+        "id": "2",
+        "label": "2F",
+        "image": "./images/CC/floorplan-cc-2F.jpg"
+      },
+      {
+        "id": "3",
+        "label": "3F",
+        "image": "./images/CC/floorplan-cc-3F.jpg"
+      },
+      {
+        "id": "4",
+        "label": "4F",
+        "image": "./images/CC/floorplan-cc-4F.jpg"
+      },
+      {
+        "id": "5",
+        "label": "5F",
+        "image": "./images/CC/floorplan-cc-5F.jpg"
+      },
+      {
+        "id": "6",
+        "label": "6F",
+        "image": "./images/CC/floorplan-cc-6F.jpg"
+      },
+      {
+        "id": "7",
+        "label": "7F",
+        "image": "./images/CC/floorplan-cc-7F.jpg"
+      }
+    ]
+  },
+  "q": {
+    "name": "行政聯合辦公室(Q)",
+    "floors": [
+      {
+        "id": "1",
+        "label": "1F",
+        "image": "./images/Q/floorplan-q-1F.jpg"
+      },
+      {
+        "id": "2",
+        "label": "5F",
+        "image": "./images/Q/floorplan-q-5F.jpg"
+      },
+      {
+        "id": "3",
+        "label": "6F",
+        "image": "./images/Q/floorplan-q-6F.jpg"
+      },
+      {
+        "id": "4",
+        "label": "7F",
+        "image": "./images/Q/floorplan-q-7F.jpg"
+      }
+    ]
+  }
+}

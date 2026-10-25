@@ -1,0 +1,195 @@
+{
+  "apiKey": "YOUR_GOOGLE_MAPS_API_KEY",
+  "campus": {
+    "name": "銘傳大學桃園校區",
+    "gate": {
+      "name": "校門口",
+      "lat": 24.986297,
+      "lng": 121.343604
+    },
+    "arrivalRadiusMeters": 450,
+    "indoorEntryScopeKey": "mcu_nav_nodes_campus",
+    "indoorEntryNodeName": "0001",
+    "gateMapXPercent": 87.57,
+    "gateMapYPercent": 14.2,
+    "gpsMaxAccuracyMeters": 80,
+    "satelliteCenter": {
+      "lat": 24.98472,
+      "lng": 121.34285
+    },
+    "satelliteView": {
+      "lat": 24.98472,
+      "lng": 121.34285,
+      "zoom": 17.2,
+      "heading": 0,
+      "tilt": 0
+    },
+    "satelliteBounds": {
+      "north": 24.98655,
+      "south": 24.98315,
+      "west": 121.34055,
+      "east": 121.34465
+    },
+    "satelliteImage": {
+      "url": "./images/campus/campus-satellite-ref.png",
+      "anchors": [
+        {
+          "label": "校門口／北側入口",
+          "lat": 24.986297,
+          "lng": 121.343604,
+          "xPercent": 68,
+          "yPercent": 12
+        },
+        {
+          "label": "金融／S 一帶",
+          "lat": 24.98515,
+          "lng": 121.34205,
+          "xPercent": 48,
+          "yPercent": 18
+        },
+        {
+          "label": "綜合教學／EE",
+          "lat": 24.98455,
+          "lng": 121.34095,
+          "xPercent": 14,
+          "yPercent": 44
+        },
+        {
+          "label": "圖書館 Q",
+          "lat": 24.98475,
+          "lng": 121.34255,
+          "xPercent": 44,
+          "yPercent": 44
+        },
+        {
+          "label": "體育館 R",
+          "lat": 24.98495,
+          "lng": 121.34325,
+          "xPercent": 58,
+          "yPercent": 42
+        },
+        {
+          "label": "田徑場",
+          "lat": 24.9854,
+          "lng": 121.3439,
+          "xPercent": 78,
+          "yPercent": 40
+        },
+        {
+          "label": "設計大樓 M",
+          "lat": 24.98354,
+          "lng": 121.34208,
+          "xPercent": 38,
+          "yPercent": 74
+        },
+        {
+          "label": "資訊網路 CC",
+          "lat": 24.98435,
+          "lng": 121.3417,
+          "xPercent": 28,
+          "yPercent": 70
+        },
+        {
+          "label": "第三宿舍 O",
+          "lat": 24.98415,
+          "lng": 121.34375,
+          "xPercent": 76,
+          "yPercent": 78
+        },
+        {
+          "label": "室外籃排球場",
+          "lat": 24.9839,
+          "lng": 121.34285,
+          "xPercent": 56,
+          "yPercent": 68
+        }
+      ]
+    },
+    "mapGpsAnchors": [
+      {
+        "label": "校門口（自製圖右上／衛星東北入口）",
+        "lat": 24.986297,
+        "lng": 121.343604,
+        "xPercent": 87.57,
+        "yPercent": 14.2
+      },
+      {
+        "label": "S棟熱點（自製圖上方／資訊・金融一帶）",
+        "lat": 24.98515,
+        "lng": 121.34205,
+        "xPercent": 45,
+        "yPercent": 9
+      },
+      {
+        "label": "AA棟熱點（自製圖上方偏右／科技大樓一帶）",
+        "lat": 24.98525,
+        "lng": 121.34245,
+        "xPercent": 55,
+        "yPercent": 9
+      },
+      {
+        "label": "EE棟熱點（自製圖左側／綜合教學一帶）",
+        "lat": 24.98455,
+        "lng": 121.34095,
+        "xPercent": 13,
+        "yPercent": 55
+      },
+      {
+        "label": "P棟熱點（自製圖左下／觀光語文一帶）",
+        "lat": 24.98435,
+        "lng": 121.34135,
+        "xPercent": 21,
+        "yPercent": 55
+      },
+      {
+        "label": "應兆紀念圖書館 Q（環道內偏中）",
+        "lat": 24.98475,
+        "lng": 121.34255,
+        "xPercent": 58,
+        "yPercent": 38
+      },
+      {
+        "label": "體育館 R（田徑場西側）",
+        "lat": 24.98495,
+        "lng": 121.34325,
+        "xPercent": 72,
+        "yPercent": 40
+      },
+      {
+        "label": "田徑場中心",
+        "lat": 24.9854,
+        "lng": 121.3439,
+        "xPercent": 92,
+        "yPercent": 38
+      },
+      {
+        "label": "設計大樓 M／籃排球場西側",
+        "lat": 24.98354,
+        "lng": 121.34208,
+        "xPercent": 48,
+        "yPercent": 64
+      },
+      {
+        "label": "環道南側節點0061（近球場）",
+        "lat": 24.9839,
+        "lng": 121.34285,
+        "xPercent": 52.2,
+        "yPercent": 63.4
+      },
+      {
+        "label": "環道東南節點0081（近宿舍／田徑場南）",
+        "lat": 24.98415,
+        "lng": 121.34375,
+        "xPercent": 88.3,
+        "yPercent": 61.8
+      },
+      {
+        "label": "資訊網路大樓 CC",
+        "lat": 24.98435,
+        "lng": 121.3417,
+        "xPercent": 35,
+        "yPercent": 55
+      }
+    ]
+  }
+}

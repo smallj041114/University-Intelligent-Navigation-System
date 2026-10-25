@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>連結／QR｜管理後台</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="admin-links-page">
+    <main class="admin-links-shell">
+      <header class="admin-home-header">
+        <p class="admin-login-kicker">管理後台</p>
+        <h1 class="admin-login-title">連結／QR</h1>
+        <p class="admin-login-desc">
+          網址一律用目前瀏覽器網域。二級帳號可在此產生 QR；儲存據點面向請到導覽環景操作。
+        </p>
+      </header>
+
+      <section class="admin-links-section panel-section">
+        <h2 class="admin-links-heading">1. 訪客入口</h2>
+        <p class="admin-links-hint">掃了進入訪客選起點／目的地頁。</p>
+        <div class="admin-links-row">
+          <input id="visitorUrl" class="modal-input" type="text" readonly />
+          <button id="visitorCopyBtn" type="button" class="primary-btn">複製連結</button>
+          <button id="visitorQrBtn" type="button" class="secondary-btn">產生 QR</button>
+        </div>
+      </section>
+
+      <section class="admin-links-section panel-section">
+        <h2 class="admin-links-heading">2. 整條路徑分享</h2>
+        <p class="admin-links-hint">與導覽側欄「複製分享連結」相同參數（可含 go=1 自動播放）。</p>
+        <label class="modal-label" for="pathFromInput">起點</label>
+        <input id="pathFromInput" class="modal-input" type="text" placeholder="例如 1020 或 gate" list="pathShareSuggestions" />
+        <label class="modal-label" for="pathToInput">終點</label>
+        <input id="pathToInput" class="modal-input" type="text" placeholder="例如 S109" list="pathShareSuggestions" />
+        <datalist id="pathShareSuggestions"></datalist>
+        <label class="modal-label" for="pathViaInput">中途（選填，逗號分隔）</label>
+        <input id="pathViaInput" class="modal-input" type="text" placeholder="例如 2001,3002" />
+        <label class="admin-links-check">
+          <input id="pathGoCheck" type="checkbox" checked />
+          開啟後自動開始導航（go=1）
+        </label>
+        <div class="admin-links-row">
+          <input id="pathShareUrl" class="modal-input" type="text" readonly />
+          <button id="pathShareCopyBtn" type="button" class="primary-btn">複製連結</button>
+          <button id="pathShareQrBtn" type="button" class="secondary-btn">產生 QR</button>
+        </div>
+      </section>
+
+      <section class="admin-links-section panel-section">
+        <h2 class="admin-links-heading">3. 各據點環景</h2>
+        <p class="admin-links-hint">
+          在管理員登入後的導覽環景中，按「儲存據點面向」可把目前節點與朝向存下來；此處選擇已存地點產生連結／QR。掃了會開該環景並面向儲存時的方向，並設為路徑起點。
+        </p>
+        <label class="modal-label" for="spotPresetSelect">已存據點</label>
+        <select id="spotPresetSelect" class="modal-input"></select>
+        <p id="spotEmptyHint" class="admin-links-hint hidden">尚無已存據點。請先到導覽頁開啟環景並儲存面向。</p>
+        <div class="admin-links-row">
+          <input id="spotUrl" class="modal-input" type="text" readonly />
+          <button id="spotCopyBtn" type="button" class="primary-btn">複製連結</button>
+          <button id="spotQrBtn" type="button" class="secondary-btn">產生 QR</button>
+          <button id="spotDeleteBtn" type="button" class="secondary-btn">刪除此項</button>
+        </div>
+      </section>
+
+      <section class="admin-links-section panel-section">
+        <h2 class="admin-links-heading">QR 預覽</h2>
+        <p id="qrStatus" class="admin-links-hint">按上方「產生 QR」後顯示於此，可右鍵另存或列印。</p>
+        <canvas id="qrCanvas" class="admin-links-qr-canvas" width="240" height="240"></canvas>
+        <a id="qrDownloadLink" class="secondary-btn admin-links-download hidden" download="campus-qr.png">下載 PNG</a>
+      </section>
+
+      <p id="linksStatus" class="admin-links-status" aria-live="polite"></p>
+      <nav class="admin-page-footer" aria-label="頁面導覽">
+        <a id="adminFooterNoticesLink" class="admin-page-footer-link hidden" href="./notices.html">公告</a>
+        <a class="admin-page-footer-link" href="../navigation.html">導覽</a>
+        <button id="adminLogoutBtn" type="button" class="admin-page-footer-link admin-page-footer-btn">登出</button>
+        <a id="adminHomeBackLink" class="admin-page-footer-link" href="./index.html">管理後台</a>
+      </nav>
+    </main>
+    <script type="module" src="/src/pages/admin-links.js"></script>
+  </body>
+</html>
